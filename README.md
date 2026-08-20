@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # porto
 pokoknya portto
 =======
+=======
+>>>>>>> 28740fea1fbd3390793df738b23efbdde5a735db
 # Astro Starter Kit: Minimal
 
 ```sh
@@ -45,4 +48,8 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
->>>>>>> 28740fe (Initial commit)
+<<<<<<< HEAD
+Content from GitHub (or base)
+=======
+Content from your local commit
+>>>>>>> 28740fe (# Initial commit)
