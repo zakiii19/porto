@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
+import ClientCloud from '../components/ClientCloud';
+import FeaturedProjects from '../components/FeaturedProjects';
+import CompetencyMatrix from '../components/CompetencyMatrix';
+import CareerSnapshot from '../components/CareerSnapshot';
+import ContactHub from '../components/ContactHub';
+import Footer from '../components/Footer';
+
+// Retrieve all projects from content collection
+const allProjects = await getCollection('projects');
+
+// Sort by date (descending) and take featured ones
+const featuredProjects = allProjects
+  .filter((project) => project.data.featured)
+  .sort((a, b) => b.data.date.localeCompare(a.data.date))
+  .slice(0, 4);
+---
+
+<Layout>
+  <!-- Global navigation bar -->
+  <Navbar client:load />
+
+  <main class="flex-grow">
+    <!-- Hero presentation & role blocks -->
+    <HeroSection client:load />
+
+    <!-- Collaborations logo cloud with tooltips -->
+    <ClientCloud client:load />
+
+    <!-- Featured Case Studies grid -->
+    <FeaturedProjects projects={featuredProjects} />
+
+    <!-- Categorized Skillsets matrix -->
+    <CompetencyMatrix />
+
+    <!-- Career timeline & credentials snapshot -->
+    <CareerSnapshot />
+
+    <!-- Connect hub and direct copy email utility -->
+    <ContactHub client:load />
+  </main>
+
+  <!-- Global Footer -->
+  <Footer />
+</Layout>

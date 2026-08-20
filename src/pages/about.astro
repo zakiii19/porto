@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import CertificationsGrid from '../components/CertificationsGrid';
+import { Calendar, Briefcase, Award, FileText, CheckCircle2 } from 'lucide-react';
+import profileData from '../data/profile.json';
+---
+
+<Layout title={`About Jane Doe | Systems Analyst & Designer`}>
+  <Navbar client:load />
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 flex-grow">
+    
+    {/* Page Header */}
+    <div class="border-b border-zinc-900 pb-12 mb-16">
+      <span class="text-[10px] uppercase font-bold tracking-widest text-violet-400 block mb-3">
+        BACKGROUND & METHODOLOGY
+      </span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-6">
+        Solving complex business systems through visual design and technical architecture.
+      </h1>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <p class="text-zinc-400 text-sm sm:text-base max-w-2xl leading-relaxed">
+          I bridge the gap between abstract business requirements, user experience flow designs, and the final high-fidelity visual representations. Learn about my philosophy and professional path below.
+        </p>
+        <a
+          href="/resume.pdf"
+          download
+          class="flex items-center space-x-2 text-sm font-semibold text-white bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 px-5 py-3 rounded-lg shadow-lg shadow-violet-500/10 transition-all duration-200"
+        >
+          <FileText className="w-4 h-4" />
+          <span>Download Full CV</span>
+        </a>
+      </div>
+    </div>
+
+    {/* Narrative & Philosophy Grid */}
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-24">
+      {/* Biography */}
+      <div class="lg:col-span-6 space-y-6">
+        <h2 class="text-xl sm:text-2xl font-bold text-zinc-100 font-display">Biographical Statement</h2>
+        <p class="text-sm text-zinc-400 leading-relaxed">
+          My journey started in graphic design, crafting identities and layout assets for creative agencies. Over time, I realized that beautiful designs are only as good as the underlying systems that support them. This sparked my transition into UI/UX design, where I could build comprehensive interactive prototypes, and eventually into systems analysis, where I could structure requirements, model business data flow diagrams, and design robust architectures.
+        </p>
+        <p class="text-sm text-zinc-400 leading-relaxed">
+          Today, I operate at the intersection of these three domains. I believe that a systems analyst who understands UI/UX and visual aesthetics can write better PRDs, and a designer who understands technical limitations can construct far more practical layouts.
+        </p>
+      </div>
+
+      {/* Methodology & Philosophy */}
+      <div class="lg:col-span-6 space-y-6">
+        <h2 class="text-xl sm:text-2xl font-bold text-zinc-100 font-display">Work Methodology</h2>
+        
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
+            <div>
+              <h3 class="text-sm font-bold text-zinc-200">1. Requirement & Architecture Rigor</h3>
+              <p class="text-xs text-zinc-555 leading-relaxed">Defining clear scope limits, creating detailed UML/BPMN flowcharts, and validating databases before drawing a single wireframe.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
+            <div>
+              <h3 class="text-sm font-bold text-zinc-200">2. Interface Simplicity & Feedback</h3>
+              <p class="text-xs text-zinc-555 leading-relaxed">Structuring Figma variables and reusable component libraries. Running usability test cycles and incorporating developer-focused code handoff standards.</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <CheckCircle2 className="w-5 h-5 text-violet-400 mt-0.5 flex-shrink-0" />
+            <div>
+              <h3 class="text-sm font-bold text-zinc-200">3. Brand & Graphic Integrity</h3>
+              <p class="text-xs text-zinc-555 leading-relaxed">Creating clean branding manuals, choosing correct typography, and making sure the digital assets retain premium visual identities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Chronological Timeline */}
+    <div class="border-t border-zinc-900 pt-16 mb-24">
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100 mb-12 flex items-center gap-3 font-display">
+        <Briefcase className="w-6 h-6 text-violet-400" />
+        <span>Full Career Experience</span>
+      </h2>
+
+      <div class="relative border-l border-zinc-800 ml-4 pl-8 space-y-12 max-w-4xl">
+        {profileData.experiences.map((exp) => (
+          <div class="relative">
+            {/* Timeline dot */}
+            <div class="absolute -left-[37px] top-1.5 w-3.5 h-3.5 rounded-full bg-violet-400 border-4 border-zinc-950"></div>
+            
+            <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
+              <span class="inline-flex items-center gap-1.5 text-xs text-zinc-500 font-medium">
+                <Calendar className="w-3.5 h-3.5" />
+                <span>{exp.period}</span>
+              </span>
+              <span class="hidden sm:inline text-zinc-700">&bull;</span>
+              <span class="text-xs sm:text-sm text-violet-400 font-semibold">{exp.company}</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-zinc-100 mb-4">{exp.role}</h3>
+            
+            <ul class="space-y-2 list-disc pl-5 text-sm text-zinc-400 leading-relaxed">
+              {exp.highlights.map((highlight) => (
+                <li>{highlight}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Credentials Directory */}
+    <div id="credentials" class="border-t border-zinc-900 pt-16">
+      <h2 class="text-2xl sm:text-3xl font-bold text-zinc-100 mb-12 flex items-center gap-3 font-display">
+        <Award className="w-6 h-6 text-violet-400" />
+        <span>Verified Licenses & Certifications</span>
+      </h2>
+
+      {/* Interactive toggleable certifications grid */}
+      <CertificationsGrid client:load certifications={profileData.certifications} />
+    </div>
+
+  </main>
+
+  <Footer />
+</Layout>
