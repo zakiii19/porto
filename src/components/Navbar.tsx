@@ -33,9 +33,11 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand Identity */}
         <a href="/" className="flex items-center space-x-2 group">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-violet-500 to-blue-600 flex items-center justify-center font-bold text-white group-hover:scale-105 transition-transform duration-200">
-            QM
-          </div>
+          <img
+            src="/my-icon.png"
+            alt="Qolbul Muzaki Logo"
+            className="w-9 h-9 rounded-lg object-cover group-hover:scale-105 transition-transform duration-200"
+          />
           <div className="flex flex-col">
             <span className="font-semibold text-sm leading-tight text-zinc-100 group-hover:text-violet-400 transition-colors duration-200">
               {profileData.personal.name}
@@ -108,7 +110,7 @@ export default function Navbar() {
 
           {/* Quick Resume Download */}
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1xIIly5694LFxl7aY197WUXQ841p-FK_h/view?usp=drive_link"
             download
             className="flex items-center space-x-2 text-xs font-medium text-white bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 px-3 py-1.5 rounded-lg shadow-lg shadow-violet-500/10 hover:shadow-violet-500/20 hover:-translate-y-0.5 transition-all duration-200"
           >

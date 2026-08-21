@@ -8,10 +8,9 @@ export default function CompetencyMatrix() {
       icon: Network,
       color: "border-blue-500/20 text-blue-400 bg-blue-500/5",
       skills: [
-        "UML & BPMN Workflows",
+        "UML Workflows",
         "System Architecture Design",
         "Product Requirements Docs (PRD)",
-        "API Contract Specifications",
         "Relational & TimeSeries Databases",
         "Agile Methodology & Jira",
         "Draw.io & Lucidchart",
@@ -26,9 +25,7 @@ export default function CompetencyMatrix() {
         "Interactive High-Fi Prototypes",
         "Wireframing & Site Mapping",
         "Usability Testing & Audits",
-        "Tailwind CSS & CSS v4",
-        "Astro & Next.js Frameworks",
-        "React Component Libraries",
+        "User Flows & Journey Mapping",
       ],
     },
     {

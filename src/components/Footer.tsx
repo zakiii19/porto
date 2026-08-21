@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Logo & Headline */}
-          <div>
+          {/* <div>
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 rounded bg-gradient-to-br from-violet-500 to-blue-600 flex items-center justify-center font-bold text-white">
                 JD
@@ -22,7 +22,19 @@ export default function Footer() {
             <p className="mt-3 text-xs text-zinc-400 max-w-xs leading-relaxed">
               {profileData.personal.headline}
             </p>
+          </div> */}
+          <a href="/" className="flex items-center space-x-2 group">
+          <img
+            src="/my-icon.png"
+            alt="Qolbul Muzaki Logo"
+            className="w-9 h-9 rounded-lg object-cover group-hover:scale-105 transition-transform duration-200"
+          />
+          <div className="flex flex-col">
+            <span className="font-semibold text-sm leading-tight text-zinc-100 group-hover:text-violet-400 transition-colors duration-200">
+              {profileData.personal.name}
+            </span>
           </div>
+        </a>
 
           {/* Site Directory Links */}
           <div className="flex flex-col space-y-2">
@@ -49,7 +61,7 @@ export default function Footer() {
                 About
               </a>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1xIIly5694LFxl7aY197WUXQ841p-FK_h/view?usp=drive_link"
                 download
                 className="text-sm text-zinc-400 hover:text-violet-400 transition-colors flex items-center"
               >
