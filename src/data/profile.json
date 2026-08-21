@@ -1,0 +1,370 @@
+{
+  "personal": {
+    "name": "Qolbul Muzaki",
+    "headline": "System Analyst & UI/UX / Graphic Designer",
+    "bio": "Transforming complex business logic into intuitive user experiences and striking visual brand assets. Bridging the gap between software architecture, user-centered interface design, and modern brand aesthetics."
+  },
+  "socials": {
+    "email": "qolbul.muzaki@gmail.com",
+    "instagram": "https://instagram.com/qgambar_",
+    "pinterest": "https://pinterest.com/qolbulmu_",
+    "medium": "https://medium.com/@qolbulmuzaki",
+    "github": "https://github.com/zakiii19",
+    "linkedin": "https://linkedin.com/in/qolbulmuzaki"
+  },
+  "collaborations": [
+    {
+      "name": "LJH Realty Semarang Kota",
+      "logo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Business Support & Graphic Designer"
+    },
+    {
+      "name": "Platinum Squad",
+      "logo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Graphic Designer"
+    },
+    {
+      "name": "AMJD.Shoot",
+      "logo": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Logo Designer"
+    },
+    {
+      "name": "Gangliofid",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "CKJ Management",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "Photo Instax Semarang",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "Prasada Fushion",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Intern Graphic Designer"
+    },
+    {
+      "name": "Megacodify",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "SchoolTech Indonesia",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Intern UI/UX Designer"
+    },
+    {
+      "name": "Viula Studio",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "Gudha Pranahara Indonesia",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Intern Graphic Designer"
+    },
+    {
+      "name": "Inago Design",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "Custompedia Creative Group",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "Bank Jateng",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "Segel",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    },
+    {
+      "name": "SD Islam Al-Madinah Ungaran",
+      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
+      "role": "Freelance Graphic Designer"
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Business Support & Graphic Designer",
+      "company": "LJH Realty Semarang Kota",
+      "period": "Jan 2025 - Present",
+      "highlights": [
+        "Manage the maintenance and smooth operation of office IT infrastructure (hardware, networks, workstations) to support daily operations.",
+        "Design visual assets and digital marketing materials to support the promotion and branding of property units.",
+        "Prepare operational technical documentation and assist in setting up infrastructure for business presentations."
+      ]
+    },
+    {
+      "role": "Social Media & Graphic Designer",
+      "company": "CKJ Management",
+      "period": "Dec 2022 - Present",
+      "highlights": [
+        "Manage visual strategies and content design for several school social media accounts.",
+        "Periodically analyze content performance metrics to optimize audience engagement."
+      ]
+    },
+    {
+      "role": "Senior Systems Analyst & UI Designer",
+      "company": "Global Tech Solutions",
+      "period": "May 2021 - Jan 2023",
+      "highlights": [
+        "Translated abstract stakeholder business models into technical UML diagrams and system requirement specifications.",
+        "Designed high-fidelity mockups and interactive user journeys for enterprise software dashboards.",
+        "Conducted extensive usability testing workshops with client focus groups to gather product feedback."
+      ]
+    },
+    {
+      "role": "Product Designer & Business Analyst",
+      "company": "Innovate Labs Inc.",
+      "period": "Aug 2019 - Apr 2021",
+      "highlights": [
+        "Iterated on complex data visualization concepts to present SaaS analytics tools in a simplified manner.",
+        "Mapped user onboarding pathways, resulting in a 25% increase in conversion rates for the company's core web application.",
+        "Coordinated with project management and QA leads to define backlog items and user stories."
+      ]
+    },
+    {
+      "role": "UI/UX Designer",
+      "company": "NextGen Digital Agency",
+      "period": "Mar 2018 - Jul 2019",
+      "highlights": [
+        "Crafted interactive wireframes, prototypes, and UI specifications for 15+ iOS and Android applications.",
+        "Collaborated with developers to implement responsive styles using Bootstrap and Tailwind CSS.",
+        "Established baseline responsive grid rules for client portals and e-commerce websites."
+      ]
+    },
+    {
+      "role": "Senior Graphic Designer",
+      "company": "Vivid Branding Agency",
+      "period": "Jan 2016 - Feb 2018",
+      "highlights": [
+        "Designed comprehensive corporate identity packages, brand manuals, and marketing collateral for global clients.",
+        "Led a small team of junior designers to execute visual content across digital, print, and social media channels.",
+        "Facilitated client alignment workshops to translate abstract visions into final brand assets."
+      ]
+    },
+    {
+      "role": "Graphic Designer & Branding Lead",
+      "company": "Creative Studio Agency",
+      "period": "Sep 2014 - Dec 2015",
+      "highlights": [
+        "Concepted and executed visual design projects including logos, packaging mechanicals, and editorial spreads.",
+        "Established color theories and typography systems to elevate client brand values.",
+        "Managed multiple visual design asset libraries and coordinate vector exports for print production."
+      ]
+    },
+    {
+      "role": "Creative Designer",
+      "company": "Horizon Media House",
+      "period": "Jun 2012 - Aug 2014",
+      "highlights": [
+        "Produced high-quality raster and vector artwork for promotional advertisements and magazines.",
+        "Designed UI layouts for company landing pages and newsletter campaigns.",
+        "Supported senior staff in creating presentation decks and pitches for high-profile client accounts."
+      ]
+    },
+    {
+      "role": "Junior Designer & IT Coordinator",
+      "company": "Pioneer Print & Web Solutions",
+      "period": "Jan 2011 - May 2012",
+      "highlights": [
+        "Assisted in formatting print assets, layout compositions, and color checks.",
+        "Maintained studio server architectures, hardware configurations, and file backup routines.",
+        "Constructed simple web layouts using HTML and CSS for local businesses."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "System Analyst Certification",
+      "issuer": "BNSP",
+      "year": "2024",
+      "credentialUrl": "https://example.com/cert/1"
+    },
+    {
+      "title": "Google UX Design Professional Certificate",
+      "issuer": "Google via Coursera",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/2"
+    },
+    {
+      "title": "Certified Usability Analyst (CUA)",
+      "issuer": "Human Factors International",
+      "year": "2022",
+      "credentialUrl": "https://example.com/cert/3"
+    },
+    {
+      "title": "Professional Scrum Master I (PSM I)",
+      "issuer": "Scrum.org",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/4"
+    },
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "year": "2024",
+      "credentialUrl": "https://example.com/cert/5"
+    },
+    {
+      "title": "Adobe Certified Professional - Illustrator",
+      "issuer": "Adobe",
+      "year": "2021",
+      "credentialUrl": "https://example.com/cert/6"
+    },
+    {
+      "title": "Interaction Design Specialist",
+      "issuer": "Interaction Design Foundation",
+      "year": "2022",
+      "credentialUrl": "https://example.com/cert/7"
+    },
+    {
+      "title": "ITIL v4 Foundation in IT Service",
+      "issuer": "AXELOS",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/8"
+    },
+    {
+      "title": "Certified Business Analysis Professional",
+      "issuer": "IIBA",
+      "year": "2024",
+      "credentialUrl": "https://example.com/cert/9"
+    },
+    {
+      "title": "TOGAF 9.2 Enterprise Architecture Foundation",
+      "issuer": "The Open Group",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/10"
+    },
+    {
+      "title": "Figma Design Systems Masterclass",
+      "issuer": "DesignCrest",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/11"
+    },
+    {
+      "title": "Enterprise Design Thinking Co-Creator",
+      "issuer": "IBM",
+      "year": "2022",
+      "credentialUrl": "https://example.com/cert/12"
+    },
+    {
+      "title": "Certified Product Manager (CPM)",
+      "issuer": "AIPMM",
+      "year": "2024",
+      "credentialUrl": "https://example.com/cert/13"
+    },
+    {
+      "title": "UI Design Pattern Architecture",
+      "issuer": "Interaction Design Foundation",
+      "year": "2021",
+      "credentialUrl": "https://example.com/cert/14"
+    },
+    {
+      "title": "Typography Specialist Certification",
+      "issuer": "TypeFoundry Academy",
+      "year": "2020",
+      "credentialUrl": "https://example.com/cert/15"
+    },
+    {
+      "title": "BPMN Process Modeling Practitioner",
+      "issuer": "BPM-Institute",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/16"
+    },
+    {
+      "title": "Information Architecture Specialist",
+      "issuer": "UX Certification Board",
+      "year": "2022",
+      "credentialUrl": "https://example.com/cert/17"
+    },
+    {
+      "title": "Product Owner certification (PSPO I)",
+      "issuer": "Scrum.org",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/18"
+    },
+    {
+      "title": "Adobe Certified Professional - Photoshop",
+      "issuer": "Adobe",
+      "year": "2020",
+      "credentialUrl": "https://example.com/cert/19"
+    },
+    {
+      "title": "Certified Associate in Project Management (CAPM)",
+      "issuer": "Project Management Institute (PMI)",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/20"
+    },
+    {
+      "title": "Design System Tokens Specialist",
+      "issuer": "Figma Academy",
+      "year": "2024",
+      "credentialUrl": "https://example.com/cert/21"
+    },
+    {
+      "title": "UX Research Methods Professional",
+      "issuer": "Nielsen Norman Group (NNg)",
+      "year": "2022",
+      "credentialUrl": "https://example.com/cert/22"
+    },
+    {
+      "title": "Web Accessibility Specialist (WAS)",
+      "issuer": "IAAP",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/23"
+    },
+    {
+      "title": "Brand Strategy Master Certificate",
+      "issuer": "Visual Brand Institute",
+      "year": "2021",
+      "credentialUrl": "https://example.com/cert/24"
+    },
+    {
+      "title": "Modern Frontend Technologies (React & Astro)",
+      "issuer": "Frontend Masters",
+      "year": "2024",
+      "credentialUrl": "https://example.com/cert/25"
+    },
+    {
+      "title": "Agile Product Management (APM)",
+      "issuer": "Scaled Agile",
+      "year": "2023",
+      "credentialUrl": "https://example.com/cert/26"
+    },
+    {
+      "title": "UML Software Engineering Associate",
+      "issuer": "OMG (Object Management Group)",
+      "year": "2022",
+      "credentialUrl": "https://example.com/cert/27"
+    },
+    {
+      "title": "Human-Computer Interaction Specialist",
+      "issuer": "Georgia Institute of Technology",
+      "year": "2021",
+      "credentialUrl": "https://example.com/cert/28"
+    },
+    {
+      "title": "Creative Packaging Engineering",
+      "issuer": "Graphic Design Council",
+      "year": "2020",
+      "credentialUrl": "https://example.com/cert/29"
+    },
+    {
+      "title": "CSS v4 Layout Advanced Specifications",
+      "issuer": "W3C Community Group",
+      "year": "2025",
+      "credentialUrl": "https://example.com/cert/30"
+    }
+  ]
+}
