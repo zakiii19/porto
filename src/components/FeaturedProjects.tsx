@@ -43,7 +43,8 @@ export default function FeaturedProjects({ projects }: Props) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
+          {projects.slice(0, 3).map((project) => (
+          // {projects.map((project) => (
             <a
               key={project.id}
               href={`/projects/${project.id}`}

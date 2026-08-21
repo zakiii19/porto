@@ -68,12 +68,14 @@ const { Content } = await render(project);
     </section>
 
     {/* Metadata & Case Study Content */}
+    {/* Metadata & Case Study Content */}
     <section class="py-16 bg-zinc-950">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
-          {/* Left Metadata Panel (4 cols on desktop) */}
-          <aside class="lg:col-span-4 bg-zinc-900/30 border border-zinc-800 rounded-2xl p-6 sm:p-8 space-y-6 sticky top-24">
+          {/* Left Metadata Panel */}
+          {/* PERBAIKAN: Gunakan lg:sticky top-24 (bukan sticky biasa) agar tidak tumpang tindih di mobile */}
+          <aside class="lg:col-span-4 bg-zinc-900/30 border border-zinc-800 rounded-2xl p-6 sm:p-8 space-y-6 lg:sticky lg:top-24 order-2 lg:order-1">
             <h2 class="text-base font-bold text-zinc-100 uppercase tracking-widest border-b border-zinc-850 pb-4">
               Project Parameters
             </h2>
@@ -153,8 +155,9 @@ const { Content } = await render(project);
             )}
           </aside>
 
-          {/* Right Rich Content Panel (8 cols on desktop) */}
-          <article class="lg:col-span-8 bg-zinc-900/10 border border-zinc-900/60 rounded-2xl p-6 sm:p-10">
+          {/* Right Rich Content Panel */}
+          {/* PERBAIKAN: Menambahkan order-1 lg:order-2 agar konten dibaca lebih dulu di mobile */}
+          <article class="lg:col-span-8 bg-zinc-900/10 border border-zinc-900/60 rounded-2xl p-6 sm:p-10 order-1 lg:order-2">
             <div class="prose max-w-none">
               <Content />
             </div>

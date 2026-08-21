@@ -17,7 +17,7 @@ const allProjects = await getCollection('projects');
 const featuredProjects = allProjects
   .filter((project) => project.data.featured)
   .sort((a, b) => b.data.date.localeCompare(a.data.date))
-  .slice(0, 4);
+  .slice(0, 3);
 ---
 
 <Layout>
