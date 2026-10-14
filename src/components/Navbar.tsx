@@ -110,7 +110,7 @@ export default function Navbar() {
 
           {/* Quick Resume Download */}
           <a
-            href="https://drive.google.com/file/d/1xIIly5694LFxl7aY197WUXQ841p-FK_h/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1kliVRxG9P86tZ19SGhcQ_yTxuGOJVpJD/view?usp=drive_link"
             download
             className="flex items-center space-x-2 text-xs font-medium text-white bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 px-3 py-1.5 rounded-lg shadow-lg shadow-violet-500/10 hover:shadow-violet-500/20 hover:-translate-y-0.5 transition-all duration-200"
           >
