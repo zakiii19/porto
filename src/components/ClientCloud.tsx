@@ -15,10 +15,7 @@ export default function ClientCloud() {
     { name: 'Gudha Pranahara Indonesia', img: '/Logo GUDHA PRANAHARA INDONESIA.png', label: 'GUDHA PRANAHARA INDONESIA Logo', class: 'max-h-8 sm:max-h-9' },
     { name: '', img: '/Logo INAGO DESIGN.png', label: 'INAGO DESIGN Logo', class: 'max-h-8 sm:max-h-9' },
     { name: '', img: '/Logo KOLAVIT.png', label: 'KOLAVIT Logo', class: 'max-h-10 sm:max-h-12' },
-    { name: 'Custompedia Creative Group', img: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80', label: 'Custompedia Logo', class: 'max-h-8 sm:max-h-9 rounded' },
-    { name: 'Bank Jateng', img: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80', label: 'Bank Jateng Logo', class: 'max-h-8 sm:max-h-9 rounded' },
-    { name: 'Segel', img: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80', label: 'Segel Logo', class: 'max-h-8 sm:max-h-9 rounded' },
-    { name: 'SD Islam Almadinah', img: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80', label: 'SD Islam Almadinah Logo', class: 'max-h-8 sm:max-h-9 rounded' },
+    { name: 'Custompedia Creative Group', img: '/Logo Custompedia.png', label: 'Custompedia Logo', class: 'max-h-8 sm:max-h-9 rounded' },
   ];
 
   return (
