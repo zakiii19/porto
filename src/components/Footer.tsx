@@ -61,7 +61,7 @@ export default function Footer() {
                 About
               </a>
               <a
-                href="https://drive.google.com/file/d/1xIIly5694LFxl7aY197WUXQ841p-FK_h/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1kliVRxG9P86tZ19SGhcQ_yTxuGOJVpJD/view?usp=drive_link"
                 download
                 className="text-sm text-zinc-400 hover:text-violet-400 transition-colors flex items-center"
               >
