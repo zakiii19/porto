@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ASTRO_TELEMETRY_DISABLED=1 npm run build
+[[ -d dist ]]
+figma make deploy-preview --build-dir dist

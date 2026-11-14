@@ -158,7 +158,7 @@ export default function CareerSnapshot() {
 
   return (
     <section id="highlights" className="relative z-20 -mt-4 pt-0 pb-4">
-      <div className="max-w-[1180px] mx-auto px-6 space-y-4">
+      <div className="max-w-[1180px] mx-auto px-4 sm:px-6 space-y-4">
         {/* Horizontal Node-Flow Highlights Diagram */}
         <div className="relative py-2">
           {/* Subtle Faint Dot-Grid Backdrop */}
@@ -186,7 +186,7 @@ export default function CareerSnapshot() {
               aria-hidden="true"
             />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 items-stretch">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5 lg:gap-6 items-stretch">
               {profile.highlights.map((item, idx) => {
                 const meta = HIGHLIGHT_META[idx] || HIGHLIGHT_META[0];
                 const Icon = meta.icon;
@@ -389,8 +389,14 @@ export default function CareerSnapshot() {
             })}
           </div>
 
-          {/* Mobile Clean Brand Grid (Crisp on Touchscreens) */}
-          <div className="md:hidden space-y-4 py-2">
+          {/* Mobile Clean Brand Grid (Crisp Liquid-Glass Card on Touchscreens) */}
+          <div
+            className={`md:hidden rounded-2xl border backdrop-blur-xl p-5 space-y-4 ${
+              isDark
+                ? 'bg-[#170f29]/75 border-white/12 shadow-[0_14px_34px_rgba(0,0,0,0.38)]'
+                : 'bg-white/80 border-[#9333ea]/15 shadow-[0_12px_30px_rgba(24,16,36,0.05)]'
+            }`}
+          >
             <div className="text-center space-y-2">
               <span
                 className={`inline-block text-[11px] font-extrabold tracking-widest uppercase ${
@@ -418,7 +424,7 @@ export default function CareerSnapshot() {
                 )}
               </h3>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 px-2">
+            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-4 px-1">
               {profile.clients.map((c) => (
                 <div
                   key={c.name}
@@ -427,13 +433,23 @@ export default function CareerSnapshot() {
                   <img
                     src={c.logo}
                     alt={c.name}
-                    className={`h-7 w-auto max-w-[105px] object-contain ${
+                    className={`h-6 w-auto max-w-[96px] object-contain ${
                       isDark ? 'drop-shadow-[0_2px_10px_rgba(255,255,255,0.2)]' : ''
                     }`}
                     loading="lazy"
                   />
                 </div>
               ))}
+            </div>
+            <div className="pt-1 text-center">
+              <a
+                href="#work"
+                className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-extrabold shadow-sm ${
+                  isDark ? 'bg-[#facc15] text-[#181024]' : 'bg-[#181024] text-white'
+                }`}
+              >
+                {lang === 'id' ? 'Lihat Studi Kasus ↓' : 'Explore Case Studies ↓'}
+              </a>
             </div>
           </div>
         </div>

@@ -109,9 +109,9 @@ export default function Navbar() {
             aria-label="Toggle Language"
             className={`h-8 px-3 rounded-full text-[11px] font-bold border cursor-pointer transition-colors ${controlClass}`}
           >
-            <span className={lang === 'id' ? 'text-[#9333ea] font-extrabold' : 'opacity-60'}>ID</span>
+            <span className={lang === 'id' ? `${isDark ? 'text-[#facc15]' : 'text-[#9333ea]'} font-extrabold` : 'opacity-60'}>ID</span>
             <span className="mx-1 opacity-35">/</span>
-            <span className={lang === 'en' ? 'text-[#9333ea] font-extrabold' : 'opacity-60'}>EN</span>
+            <span className={lang === 'en' ? `${isDark ? 'text-[#facc15]' : 'text-[#9333ea]'} font-extrabold` : 'opacity-60'}>EN</span>
           </button>
 
           <button

@@ -19,7 +19,7 @@ export default function CompetencyMatrix() {
 
   return (
     <section id="about" className="py-8 md:py-10">
-      <div className="max-w-[1180px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10 items-start">
+      <div className="max-w-[1180px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10 items-start">
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -58,14 +58,14 @@ export default function CompetencyMatrix() {
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2.5 sm:gap-3">
             <motion.a
               href={profile.cvUrl}
               download
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 360, damping: 22 }}
-              className={`inline-flex items-center gap-1.5 px-5 py-3 rounded-full text-xs font-extrabold shadow-sm transition-colors ${
+              className={`flex-1 sm:flex-none justify-center inline-flex items-center gap-1.5 px-4 sm:px-5 py-3 rounded-full text-xs font-extrabold shadow-sm transition-colors ${
                 isDark
                   ? 'bg-[#facc15] text-[#181024] hover:bg-[#fde047]'
                   : 'bg-[#181024] text-white hover:bg-[#2a1d3d]'
@@ -79,7 +79,7 @@ export default function CompetencyMatrix() {
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 360, damping: 22 }}
-              className={`inline-flex items-center gap-1.5 px-5 py-3 rounded-full text-xs font-extrabold border backdrop-blur-md transition-colors ${
+              className={`flex-1 sm:flex-none justify-center inline-flex items-center gap-1.5 px-4 sm:px-5 py-3 rounded-full text-xs font-extrabold border backdrop-blur-md transition-colors ${
                 isDark
                   ? 'bg-white/10 border-white/15 text-white hover:bg-white/15'
                   : 'bg-white/85 border-[#9333ea]/20 text-[#181024] hover:border-[#9333ea]/50 hover:text-[#9333ea]'

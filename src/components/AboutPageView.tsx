@@ -87,7 +87,7 @@ export default function AboutPageView() {
           aria-hidden="true"
         />
 
-        <div className="relative z-20 max-w-[1180px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="relative z-20 max-w-[1180px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -140,14 +140,14 @@ export default function AboutPageView() {
                 : `Graduate in ${profile.education.degreeEn} — ${profile.education.institution} (${profile.education.period}, GPA ${profile.education.gpa}), combining user experience research, BNSP-certified system analysis, and expressive visual storytelling`}
             </p>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2.5 sm:gap-3">
               <motion.a
                 href={profile.cvUrl}
                 download
                 whileHover={{ y: -2, scale: 1.02 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 360, damping: 22 }}
-                className={`inline-flex items-center gap-1.5 px-5 py-3 rounded-full text-xs sm:text-sm font-extrabold shadow-sm transition-colors ${
+                className={`flex-1 sm:flex-none justify-center inline-flex items-center gap-1.5 px-4 sm:px-5 py-3 rounded-full text-xs sm:text-sm font-extrabold shadow-sm transition-colors ${
                   isDark
                     ? 'bg-[#facc15] text-[#181024] hover:bg-[#fde047]'
                     : 'bg-[#181024] text-white hover:bg-[#2a1d3d]'
@@ -163,7 +163,7 @@ export default function AboutPageView() {
                 whileHover={{ y: -2, scale: 1.02 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 360, damping: 22 }}
-                className={`inline-flex items-center gap-1.5 px-5 py-3 rounded-full border backdrop-blur-md text-xs sm:text-sm font-extrabold transition-colors ${
+                className={`flex-1 sm:flex-none justify-center inline-flex items-center gap-1.5 px-4 sm:px-5 py-3 rounded-full border backdrop-blur-md text-xs sm:text-sm font-extrabold transition-colors ${
                   isDark
                     ? 'bg-white/10 border-white/15 text-white hover:bg-white/15'
                     : 'bg-white/85 border-[#9333ea]/20 text-[#181024] hover:border-[#9333ea]/50 hover:text-[#9333ea]'
@@ -176,7 +176,9 @@ export default function AboutPageView() {
           </motion.div>
 
           {/* Right Column: Home-style Studio Spotlight + Figma Selection Frame + About.svg + Education Card */}
-          <div className="lg:col-span-5 relative min-h-[340px] sm:min-h-[430px] flex flex-col items-center justify-end overflow-visible">
+          <div className="lg:col-span-5 flex flex-col items-center justify-end overflow-visible">
+            {/* Fixed-Proportion Portrait Anchor Stage matching HeroSection */}
+            <div className="relative w-[290px] sm:w-[390px] h-[335px] sm:h-[445px] mx-auto flex items-end justify-center overflow-visible">
             {/* Studio Spotlight Directly Behind Portrait */}
             <motion.div
               animate={{ scale: [1, 1.08, 1], opacity: [0.75, 1, 0.75] }}
@@ -196,7 +198,7 @@ export default function AboutPageView() {
               initial={{ opacity: 0, scale: 0.94 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.55, delay: 0.24, ease: [0.22, 1, 0.36, 1] }}
-              className={`hidden sm:block absolute left-1/2 -translate-x-1/2 bottom-4 w-[290px] h-[365px] border pointer-events-none z-0 ${
+              className={`absolute left-1/2 -translate-x-1/2 top-5 sm:top-auto sm:bottom-3 w-[225px] h-[285px] sm:w-[290px] sm:h-[365px] border pointer-events-none z-0 ${
                 isDark ? 'border-[#facc15]/45' : 'border-[#9333ea]/35'
               }`}
               aria-hidden="true"
@@ -293,13 +295,13 @@ export default function AboutPageView() {
               </motion.div>
             </motion.div>
 
-            {/* Floating Education Snapshot Card (Bottom Left / Center on Mobile) */}
+            {/* Floating Education Snapshot Card (Desktop & Tablet Locked to Portrait) */}
             <motion.div
               style={{ x: cardX, y: cardY }}
               initial={{ opacity: 0, y: 18, scale: 0.94 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.52, ease: [0.22, 1, 0.36, 1] }}
-              className="relative sm:absolute sm:bottom-2 sm:-left-4 lg:-left-6 z-30 w-full max-w-[300px] sm:w-[270px] -mt-4 sm:mt-0"
+              className="hidden sm:block absolute bottom-3 -left-4 lg:-left-8 z-30 w-[260px]"
             >
               <motion.div
                 animate={{ y: [0, 5, 0] }}
@@ -331,13 +333,43 @@ export default function AboutPageView() {
               </p>
               </motion.div>
             </motion.div>
+            </div>
+
+            {/* Mobile Compact Education + Location Card (Visible < sm) */}
+            <div className={`sm:hidden w-full mt-3 rounded-2xl border backdrop-blur-xl p-3.5 ${glassCardClass}`} style={glassCardStyle}>
+              <div className="flex items-center justify-between gap-2 mb-1">
+                <div className="flex items-center gap-1.5">
+                  <GraduationCap size={14} className={isDark ? 'text-[#facc15]' : 'text-[#9333ea]'} />
+                  <span
+                    className={`text-[10px] font-extrabold uppercase tracking-wider ${
+                      isDark ? 'text-[#facc15]' : 'text-[#9333ea]'
+                    }`}
+                  >
+                    {lang === 'id' ? 'Pendidikan' : 'Education'}
+                  </span>
+                </div>
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-[#facc15] text-[#181024]">
+                  {lang === 'id' ? `IPK ${profile.education.gpa}` : `GPA ${profile.education.gpa}`}
+                </span>
+              </div>
+              <strong className={`block text-xs font-extrabold ${isDark ? 'text-white' : 'text-[#181024]'}`}>
+                {profile.education.institution}
+              </strong>
+              <p className={`text-[11px] mt-0.5 leading-snug ${isDark ? 'text-white/75' : 'text-[#5b516a]'}`}>
+                {lang === 'id' ? profile.education.degreeId : profile.education.degreeEn} · {profile.education.period}
+              </p>
+              <div className={`mt-2 pt-2 border-t flex items-center gap-1.5 text-[11px] font-bold ${isDark ? 'border-white/10 text-white/80' : 'border-[#9333ea]/12 text-[#5b516a]'}`}>
+                <MapPin size={12} className={isDark ? 'text-[#facc15]' : 'text-[#9333ea]'} />
+                <span>{profile.location}</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Experience & Certifications */}
       <section className="py-8 md:py-12">
-        <div className="max-w-[1180px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           <div className="lg:col-span-7">
             <span
               className={`inline-block text-xs font-extrabold tracking-widest mb-2 ${
@@ -354,11 +386,11 @@ export default function AboutPageView() {
               {lang === 'id' ? 'Riwayat Karier, Organisasi & Program' : 'Career, Organization & Program History'}
             </h2>
 
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="flex flex-nowrap overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap gap-2 mb-6">
               <button
                 type="button"
                 onClick={() => setExpFilter('all')}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
+                className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
                   expFilter === 'all'
                 )}`}
               >
@@ -367,7 +399,7 @@ export default function AboutPageView() {
               <button
                 type="button"
                 onClick={() => setExpFilter('work')}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
+                className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
                   expFilter === 'work'
                 )}`}
               >
@@ -378,7 +410,7 @@ export default function AboutPageView() {
               <button
                 type="button"
                 onClick={() => setExpFilter('org')}
-                className={`px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
+                className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
                   expFilter === 'org'
                 )}`}
               >
@@ -401,11 +433,11 @@ export default function AboutPageView() {
                       {lang === 'id' ? 'Pengalaman Kerja & Freelance' : 'Work & Freelance Experience'}
                     </h3>
                   </div>
-                  <div className="grid gap-3.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3.5">
                     {workExperiences.map((exp, idx) => (
                       <div
                         key={`work-${idx}`}
-                        className={`rounded-2xl border backdrop-blur-xl p-5 transition-all ${glassCardClass}`}
+                        className={`rounded-2xl border backdrop-blur-xl p-4 sm:p-5 transition-all ${glassCardClass}`}
                         style={glassCardStyle}
                       >
                         <span
@@ -441,11 +473,11 @@ export default function AboutPageView() {
                         : 'Organizations, Mentoring & Independent Study'}
                     </h3>
                   </div>
-                  <div className="grid gap-3.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3.5">
                     {orgExperiences.map((exp, idx) => (
                       <div
                         key={`org-${idx}`}
-                        className={`rounded-2xl border backdrop-blur-xl p-5 transition-all ${glassCardClass}`}
+                        className={`rounded-2xl border backdrop-blur-xl p-4 sm:p-5 transition-all ${glassCardClass}`}
                         style={glassCardStyle}
                       >
                         <span
@@ -485,7 +517,7 @@ export default function AboutPageView() {
               {lang === 'id' ? 'Sertifikasi & Penghargaan' : 'Certifications & Awards'}
             </h2>
 
-            <div className="flex flex-wrap gap-2 mb-6">
+            <div className="flex flex-nowrap overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap gap-2 mb-6">
               {(
                 [
                   { id: 'all', labelId: `Semua (${profile.certifications.length})`, labelEn: `All (${profile.certifications.length})` },
@@ -499,7 +531,7 @@ export default function AboutPageView() {
                   key={tab.id}
                   type="button"
                   onClick={() => setCertFilter(tab.id)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
+                  className={`shrink-0 px-3 py-1.5 rounded-full text-xs font-bold border transition-all cursor-pointer ${pillClass(
                     certFilter === tab.id
                   )}`}
                 >
@@ -508,7 +540,7 @@ export default function AboutPageView() {
               ))}
             </div>
 
-            <div className="grid gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3">
               {filteredCerts.map((cert, idx) => (
                 <div
                   key={`${cert.title}-${idx}`}

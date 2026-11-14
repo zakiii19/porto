@@ -11,13 +11,13 @@ export default function ContactHub() {
 
   return (
     <section id="contact" className="py-8 md:py-12">
-      <div className="max-w-[1180px] mx-auto px-6">
+      <div className="max-w-[1180px] mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className={`relative overflow-hidden rounded-2xl border backdrop-blur-xl px-5 py-10 sm:px-12 sm:py-14 text-center transition-colors ${
+          className={`relative overflow-hidden rounded-2xl border backdrop-blur-xl px-5 py-8 sm:px-12 sm:py-14 text-center transition-colors ${
             isDark
               ? 'bg-[#170f29]/80 border-white/12'
               : 'bg-white/80 border-[#9333ea]/15'
@@ -81,13 +81,13 @@ export default function ContactHub() {
                 ? 'Mari diskusi santai — kirim brief atau sapa langsung lewat Email atau LinkedIn'
                 : 'Let’s have a quick chat — send over a brief or say hello via Email or LinkedIn'}
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-col sm:flex-row justify-center gap-2.5 sm:gap-3">
               <motion.a
                 href={`mailto:${profile.email}`}
                 whileHover={{ y: -2, scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 360, damping: 22 }}
-                className={`inline-flex items-center gap-1.5 px-6 py-3 rounded-full font-extrabold text-xs sm:text-sm shadow-sm transition-colors ${
+                className={`w-full sm:w-auto justify-center inline-flex items-center gap-1.5 px-6 py-3 rounded-full font-extrabold text-xs sm:text-sm shadow-sm transition-colors ${
                   isDark
                     ? 'bg-[#facc15] text-[#181024] hover:bg-[#fde047]'
                     : 'bg-[#181024] text-white hover:bg-[#2a1d3d]'
@@ -103,7 +103,7 @@ export default function ContactHub() {
                 whileHover={{ y: -2, scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: 'spring', stiffness: 360, damping: 22 }}
-                className={`inline-flex items-center gap-1.5 px-6 py-3 rounded-full border backdrop-blur-md font-extrabold text-xs sm:text-sm transition-colors ${
+                className={`w-full sm:w-auto justify-center inline-flex items-center gap-1.5 px-6 py-3 rounded-full border backdrop-blur-md font-extrabold text-xs sm:text-sm transition-colors ${
                   isDark
                     ? 'bg-white/10 border-white/15 text-white hover:bg-white/15'
                     : 'bg-white/85 border-[#9333ea]/20 text-[#181024] hover:border-[#9333ea]/50 hover:text-[#9333ea]'

@@ -37,7 +37,7 @@ export default function ProjectsDirectory({ projects }: Props) {
   }, [projects, category, query]);
 
   return (
-    <section className="relative overflow-hidden pt-24 pb-12 md:pt-28 md:pb-16">
+    <section className="relative overflow-hidden pt-22 pb-10 md:pt-28 md:pb-16">
       {/* Subtle Sunlit Top Wash matching Home */}
       <div className="hero-sunlit-canvas pointer-events-none absolute inset-x-0 top-0 h-[360px]" aria-hidden="true">
         <div
@@ -46,7 +46,7 @@ export default function ProjectsDirectory({ projects }: Props) {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1180px] mx-auto px-6">
+      <div className="relative z-10 max-w-[1180px] mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -96,7 +96,7 @@ export default function ProjectsDirectory({ projects }: Props) {
             />
           </div>
 
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-nowrap overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap gap-2">
             {categories.map((cat) => {
               const active = category === cat;
               return (
@@ -107,7 +107,7 @@ export default function ProjectsDirectory({ projects }: Props) {
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.96 }}
                   transition={{ type: 'spring', stiffness: 360, damping: 22 }}
-                  className={`px-4 py-2 rounded-full text-xs font-extrabold border backdrop-blur-md cursor-pointer transition-colors ${
+                  className={`shrink-0 px-4 py-2 rounded-full text-xs font-extrabold border backdrop-blur-md cursor-pointer transition-colors ${
                     active
                       ? isDark
                         ? 'bg-[#facc15] border-[#facc15] text-[#181024] shadow-sm'
@@ -123,6 +123,16 @@ export default function ProjectsDirectory({ projects }: Props) {
             })}
           </div>
         </motion.div>
+
+        {filtered.length > 0 && (
+          <div className="flex items-center justify-between mb-4 text-xs font-bold" style={{ color: 'var(--text-muted)' }}>
+            <span>
+              {lang === 'id'
+                ? `Menampilkan ${filtered.length} dari ${projects.length} karya`
+                : `Showing ${filtered.length} of ${projects.length} projects`}
+            </span>
+          </div>
+        )}
 
         {filtered.length === 0 ? (
           <div
@@ -164,7 +174,7 @@ export default function ProjectsDirectory({ projects }: Props) {
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 lg:gap-6">
           {filtered.map((p, idx) => (
             <motion.a
               key={p.slug}
@@ -174,7 +184,7 @@ export default function ProjectsDirectory({ projects }: Props) {
               transition={{ duration: 0.38, delay: Math.min(idx * 0.05, 0.3), ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -6, scale: 1.015 }}
               href={`/projects/${p.slug}`}
-              className={`group relative h-[350px] rounded-2xl overflow-hidden border transition-colors duration-300 ${
+              className={`group relative h-[235px] sm:h-[310px] lg:h-[340px] rounded-2xl overflow-hidden border transition-colors duration-300 ${
                 isDark
                   ? 'bg-[#170f29] border-white/15 hover:border-[#facc15]/50'
                   : 'bg-white border-[#9333ea]/15 hover:border-[#9333ea]/40'
@@ -207,8 +217,8 @@ export default function ProjectsDirectory({ projects }: Props) {
                 }}
                 aria-hidden="true"
               />
-              <div className="relative z-10 flex items-center justify-between gap-2 px-4 pt-4 text-[10px] text-white">
-                <span className="px-2.5 py-1 rounded-full bg-[#181024]/55 backdrop-blur-md border border-white/15 font-extrabold tracking-wide uppercase truncate">
+              <div className="relative z-10 flex items-center justify-between gap-1.5 px-2.5 pt-2.5 sm:px-4 sm:pt-4 text-[9px] sm:text-[10px] text-white">
+                <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full bg-[#181024]/55 backdrop-blur-md border border-white/15 font-extrabold tracking-wide uppercase truncate">
                   {p.category}
                 </span>
                 <span className="font-semibold text-white/90 shrink-0">{p.date}</span>
@@ -234,10 +244,10 @@ export default function ProjectsDirectory({ projects }: Props) {
               />
 
               {/* Bottom Content Overlay */}
-              <div className="absolute inset-x-0 bottom-0 z-10 p-4 sm:p-5 flex flex-col gap-3">
+              <div className="absolute inset-x-0 bottom-0 z-10 p-3 sm:p-5 flex flex-col gap-2 sm:gap-3">
                 <div>
                   <h2
-                    className={`text-[17px] font-extrabold tracking-tight leading-snug line-clamp-1 transition-colors ${
+                    className={`text-[13px] sm:text-[17px] font-extrabold tracking-tight leading-snug line-clamp-1 transition-colors ${
                       isDark
                         ? 'text-white group-hover:text-[#facc15]'
                         : 'text-[#181024] group-hover:text-[#9333ea]'
@@ -245,13 +255,13 @@ export default function ProjectsDirectory({ projects }: Props) {
                   >
                     {p.title}
                   </h2>
-                  <p className={`text-xs leading-relaxed line-clamp-2 mt-1 ${isDark ? 'text-white/75' : 'text-[#5b516a]'}`}>
+                  <p className={`text-[11px] sm:text-xs leading-snug sm:leading-relaxed line-clamp-2 mt-0.5 sm:mt-1 ${isDark ? 'text-white/75' : 'text-[#5b516a]'}`}>
                     {lang === 'id' ? PROJECT_SUMMARY_ID[p.slug] || p.summary : p.summary}
                   </p>
                 </div>
 
                 <div
-                  className={`pt-2.5 border-t flex items-center justify-between gap-2 text-xs ${
+                  className={`pt-2 sm:pt-2.5 border-t flex items-center justify-between gap-1.5 sm:gap-2 text-[10px] sm:text-xs ${
                     isDark ? 'border-white/12' : 'border-[#9333ea]/15'
                   }`}
                 >
@@ -319,12 +329,12 @@ export default function ProjectsDirectory({ projects }: Props) {
             </p>
           </div>
 
-          <div className="relative z-10 flex flex-wrap items-center gap-2.5 shrink-0">
+          <div className="relative z-10 flex flex-wrap sm:flex-nowrap items-center gap-2.5 shrink-0 w-full md:w-auto">
             <a
               href={profile.medium}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-extrabold shadow-sm transition-all hover:-translate-y-0.5 ${
+              className={`flex-1 sm:flex-none justify-center inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-extrabold shadow-sm transition-all hover:-translate-y-0.5 ${
                 isDark
                   ? 'bg-[#facc15] text-[#181024] hover:bg-[#fde047]'
                   : 'bg-[#181024] text-white hover:bg-[#2a1d3d]'
@@ -337,7 +347,7 @@ export default function ProjectsDirectory({ projects }: Props) {
               href={profile.pinterest}
               target="_blank"
               rel="noopener noreferrer"
-              className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-extrabold border backdrop-blur-md transition-all hover:-translate-y-0.5 ${
+              className={`flex-1 sm:flex-none justify-center inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-extrabold border backdrop-blur-md transition-all hover:-translate-y-0.5 ${
                 isDark
                   ? 'bg-white/10 text-white border-white/15 hover:bg-white/15'
                   : 'bg-white/85 text-[#181024] border-[#9333ea]/20 hover:border-[#9333ea]/50 hover:text-[#9333ea]'

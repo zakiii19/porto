@@ -121,7 +121,7 @@ export default function HeroSection() {
     <section
       onMouseMove={handleHeroMouseMove}
       onMouseLeave={handleHeroMouseLeave}
-      className={`hero-sunlit-canvas relative overflow-hidden pt-24 pb-12 md:pt-28 md:pb-14 ${
+      className={`hero-sunlit-canvas relative overflow-hidden pt-22 pb-8 sm:pt-28 md:pb-14 ${
         isDark ? 'text-white' : 'text-[#181024]'
       }`}
     >
@@ -154,7 +154,7 @@ export default function HeroSection() {
         aria-hidden="true"
       />
 
-      <div className="relative z-20 max-w-[1180px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-10 gap-6 lg:gap-2 items-center">
+      <div className="relative z-20 max-w-[1180px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-10 gap-6 lg:gap-2 items-center">
         {/* Left Column (70%): Badges, Headline, Bio & CTAs */}
         <motion.div
           className="lg:col-span-7 text-left"
@@ -252,14 +252,14 @@ export default function HeroSection() {
               hidden: { opacity: 0, y: 14 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } },
             }}
-            className="flex flex-wrap gap-3"
+            className="flex flex-wrap gap-2.5 sm:gap-3"
           >
             <motion.a
               href="#work"
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 400, damping: 22 }}
-              className={`px-5 py-3 rounded-full font-extrabold text-xs sm:text-sm shadow-xl transition-colors ${
+              className={`flex-1 sm:flex-none text-center px-4 sm:px-5 py-3 rounded-full font-extrabold text-xs sm:text-sm shadow-xl transition-colors ${
                 isDark ? 'bg-white text-[#581c87]' : 'bg-[#181024] text-white'
               }`}
             >
@@ -270,7 +270,7 @@ export default function HeroSection() {
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               transition={{ type: 'spring', stiffness: 400, damping: 22 }}
-              className={`px-5 py-3 rounded-full border backdrop-blur-sm font-bold text-xs sm:text-sm transition-colors ${
+              className={`flex-1 sm:flex-none text-center px-4 sm:px-5 py-3 rounded-full border backdrop-blur-sm font-bold text-xs sm:text-sm transition-colors ${
                 isDark
                   ? 'bg-white/10 border-white/40 text-white hover:bg-white/20'
                   : 'bg-white/85 border-[#9333ea]/20 text-[#181024] hover:bg-white shadow-sm'
@@ -282,7 +282,9 @@ export default function HeroSection() {
         </motion.div>
 
         {/* Right Column (30%): Portrait Focal Point + Compact Figma Canvas + Floating Cards */}
-        <div className="lg:col-span-3 lg:-ml-4 relative min-h-[340px] sm:min-h-[450px] flex flex-col sm:flex-row items-center sm:items-end justify-center overflow-visible">
+        <div className="lg:col-span-3 lg:-ml-4 flex flex-col items-center justify-end overflow-visible">
+          {/* Fixed-Proportion Portrait Anchor Stage so Floating Cards Stay Locked to Portrait Across All Breakpoints */}
+          <div className="relative w-[290px] sm:w-[390px] h-[335px] sm:h-[445px] mx-auto flex items-end justify-center overflow-visible">
           {/* Strong Studio Spotlight Directly Behind Portrait */}
           <motion.div
             animate={{ scale: [1, 1.08, 1], opacity: [0.75, 1, 0.75] }}
@@ -305,7 +307,7 @@ export default function HeroSection() {
               opacity: { duration: 0.55, delay: 0.25 },
               scale: { type: 'spring', stiffness: 260, damping: 20 },
             }}
-            className={`hidden sm:block absolute left-1/2 -translate-x-1/2 bottom-3 w-[290px] h-[365px] border pointer-events-none z-0 ${
+            className={`absolute left-1/2 -translate-x-1/2 top-5 sm:top-auto sm:bottom-3 w-[225px] h-[285px] sm:w-[290px] sm:h-[365px] border pointer-events-none z-0 ${
               isDark ? 'border-[#facc15]/45' : 'border-[#9333ea]/35'
             }`}
             aria-hidden="true"
@@ -433,7 +435,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 18, scale: 0.92 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden sm:block absolute top-6 -left-14 z-30 w-[165px]"
+            className="hidden sm:block absolute top-6 -left-8 lg:-left-14 z-30 w-[165px]"
           >
             <motion.a
               href={mediumUrl}
@@ -467,7 +469,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 16, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.45, delay: 0.48, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden sm:block absolute top-28 -right-4 z-20 pointer-events-none"
+            className="hidden sm:block absolute top-28 -right-2 lg:-right-4 z-20 pointer-events-none"
             aria-hidden="true"
           >
             <motion.div
@@ -490,7 +492,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 18, scale: 0.92 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.58, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden sm:block absolute bottom-16 -left-10 z-30 w-[155px]"
+            className="hidden sm:block absolute bottom-16 -left-6 lg:-left-10 z-30 w-[155px]"
           >
             <motion.a
               href={profile.github}
@@ -521,7 +523,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 18, scale: 0.92 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden sm:block absolute bottom-12 -right-4 z-30 w-[160px]"
+            className="hidden sm:block absolute bottom-12 -right-2 lg:-right-4 z-30 w-[160px]"
           >
             <motion.a
               href={profile.pinterest}
@@ -571,6 +573,21 @@ export default function HeroSection() {
               </div>
             </motion.a>
           </motion.div>
+          </div>
+
+          {/* Mobile Tap Cue */}
+          <button
+            type="button"
+            onClick={() => setIsHovered((prev) => !prev)}
+            className={`sm:hidden inline-flex items-center gap-1.5 mt-1 mb-1 px-3 py-1 rounded-full backdrop-blur-md border text-[11px] font-semibold cursor-pointer ${
+              isDark
+                ? 'bg-white/12 border-white/20 text-white/90'
+                : 'bg-white/85 border-[#9333ea]/20 text-[#181024] shadow-sm'
+            }`}
+          >
+            <Play size={10} fill="currentColor" className={isDark ? 'text-[#facc15]' : 'text-[#9333ea]'} />
+            <span>{lang === 'id' ? 'Ketuk foto untuk Pose 2' : 'Tap portrait for Pose 2'}</span>
+          </button>
 
           {/* Mobile Compact Live Cards Row (Visible < sm) */}
           <div className="sm:hidden grid grid-cols-2 gap-2.5 w-full mt-3 relative z-30">

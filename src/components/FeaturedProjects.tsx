@@ -26,6 +26,7 @@ export default function FeaturedProjects({ projects }: Props) {
   const theme = useTheme();
   const isDark = theme === 'dark';
   const [activeIndex, setActiveIndex] = useState(0);
+  const [mobileActiveIdx, setMobileActiveIdx] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const dragStartX = useRef<number | null>(null);
   const didDrag = useRef(false);
@@ -447,12 +448,20 @@ export default function FeaturedProjects({ projects }: Props) {
         )}
 
         {/* Mobile Horizontal Swipeable Cards */}
-        <div className="md:hidden mt-4 flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6">
+        <div
+          onScroll={(e) => {
+            const el = e.currentTarget;
+            const cardWidth = el.firstElementChild?.getBoundingClientRect().width || 290;
+            const idx = Math.round(el.scrollLeft / (cardWidth + 16));
+            setMobileActiveIdx(Math.max(0, Math.min(total - 1, idx)));
+          }}
+          className="md:hidden mt-4 flex gap-4 overflow-x-auto snap-x snap-mandatory pb-3 -mx-6 px-6"
+        >
           {filtered.map((p) => (
             <a
               key={p.slug}
               href={`/projects/${p.slug}`}
-              className={`group snap-center shrink-0 relative w-[80vw] max-w-[300px] h-[340px] rounded-2xl overflow-hidden border ${
+              className={`group snap-center shrink-0 relative w-[78vw] max-w-[290px] h-[325px] rounded-2xl overflow-hidden border ${
                 isDark
                   ? 'bg-[#170f29] border-white/15 shadow-[0_18px_42px_rgba(0,0,0,0.45)]'
                   : 'bg-white border-[#9333ea]/12 shadow-[0_18px_40px_rgba(24,16,36,0.08)]'
@@ -523,6 +532,29 @@ export default function FeaturedProjects({ projects }: Props) {
             </a>
           ))}
         </div>
+
+        {/* Mobile Swipe Indicator & Pagination Dots */}
+        {total > 1 && (
+          <div className="md:hidden flex items-center justify-center gap-2 mt-2">
+            {filtered.map((p, idx) => (
+              <span
+                key={p.slug}
+                className={`h-1.5 rounded-full transition-all ${
+                  idx === mobileActiveIdx
+                    ? isDark
+                      ? 'w-5 bg-[#facc15]'
+                      : 'w-5 bg-[#9333ea]'
+                    : isDark
+                    ? 'w-1.5 bg-white/25'
+                    : 'w-1.5 bg-[#9333ea]/25'
+                }`}
+              />
+            ))}
+            <span className={`ml-1.5 text-[10px] font-bold ${isDark ? 'text-white/55' : 'text-[#5b516a]'}`}>
+              {mobileActiveIdx + 1}/{total}
+            </span>
+          </div>
+        )}
 
         <div className="mt-8 text-center">
           <a
