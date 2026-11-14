@@ -1,204 +1,187 @@
-import React, { useState } from "react";
-import {
-  Mail,
-  Copy,
-  Check,
-  Menu,
-  X,
-  Github,
-  Instagram,
-  Linkedin,
-  FileText,
-} from "lucide-react";
-import profileData from "../data/profile.json";
+import React, { useEffect, useState } from 'react';
+import { Menu, Moon, Sun, X } from 'lucide-react';
+import { toggleLang, toggleTheme, useLang, useTheme } from '../lib/prefs';
 
 export default function Navbar() {
-  const [copied, setCopied] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const lang = useLang();
+  const theme = useTheme();
+  const isDark = theme === 'dark';
+  const [pathname, setPathname] = useState('/');
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText(profileData.socials.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+  useEffect(() => {
+    setPathname(window.location.pathname || '/');
+  }, []);
 
   const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Projects", href: "/projects" },
-    { label: "About", href: "/about" },
+    { href: '/', label: lang === 'id' ? 'Beranda' : 'Home', match: (p: string) => p === '/' },
+    {
+      href: '/projects',
+      label: lang === 'id' ? 'Karya' : 'Projects',
+      match: (p: string) => p.startsWith('/projects'),
+    },
+    {
+      href: '/about',
+      label: lang === 'id' ? 'Tentang' : 'About',
+      match: (p: string) => p.startsWith('/about'),
+    },
   ];
 
+  const liquidGlassStyle: React.CSSProperties = isDark
+    ? {
+        background:
+          'linear-gradient(135deg, rgba(30, 18, 56, 0.56) 0%, rgba(18, 10, 34, 0.38) 100%)',
+        borderColor: 'rgba(255, 255, 255, 0.2)',
+        boxShadow:
+          'inset 0 1px 1px rgba(255, 255, 255, 0.24), inset 0 -1px 1px rgba(255, 255, 255, 0.06), 0 14px 38px rgba(0, 0, 0, 0.38)',
+      }
+    : {
+        background:
+          'linear-gradient(135deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.32) 100%)',
+        borderColor: 'rgba(255, 255, 255, 0.72)',
+        boxShadow:
+          'inset 0 1.5px 1px rgba(255, 255, 255, 0.9), inset 0 -1px 1px rgba(147, 51, 234, 0.06), 0 12px 34px rgba(24, 16, 36, 0.08)',
+      };
+
+  const controlClass = isDark
+    ? 'bg-white/10 border-white/20 text-white hover:bg-white/20'
+    : 'bg-white/55 border-white/80 text-[#181024] hover:bg-white/85 shadow-xs';
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Brand Identity */}
-        <a href="/" className="flex items-center space-x-2 group">
-          <img
-            src="/my-icon.png"
-            alt="Qolbul Muzaki Logo"
-            className="w-9 h-9 rounded-lg object-cover group-hover:scale-105 transition-transform duration-200"
-          />
-          <div className="flex flex-col">
-            <span className="font-semibold text-sm leading-tight text-zinc-100 group-hover:text-violet-400 transition-colors duration-200">
-              {profileData.personal.name}
-            </span>
-            <span className="text-[10px] text-zinc-400 tracking-wider">
-              PORTFOLIO
-            </span>
-          </div>
+    <header className="fixed top-3 left-0 right-0 z-50 px-4 sm:px-6 pointer-events-none">
+      <div
+        style={liquidGlassStyle}
+        className="pointer-events-auto max-w-[1180px] mx-auto px-3.5 sm:px-6 h-[58px] sm:h-[60px] rounded-full backdrop-blur-2xl backdrop-saturate-150 border transition-all flex items-center justify-between gap-2 sm:gap-4"
+      >
+        {/* Brand */}
+        <a href="/" className="flex items-center gap-2 sm:gap-2.5 no-underline shrink-0 group min-w-0">
+          <span
+            className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden border grid place-items-center transition-transform group-hover:scale-105 shadow-sm shrink-0 ${
+              isDark
+                ? 'bg-white/10 border-white/20'
+                : 'bg-[#f3e8ff]/80 border-[#9333ea]/20'
+            }`}
+          >
+            <img
+              src="/my-icon.png"
+              alt="Qolbul Muzaki"
+              className="w-7 h-7 sm:w-8 sm:h-8 object-contain"
+            />
+          </span>
+          <span
+            className={`font-extrabold tracking-tight text-[13px] sm:text-[15px] truncate ${
+              isDark ? 'text-white' : 'text-[#181024]'
+            }`}
+          >
+            Qolbul Muzaki
+          </span>
         </a>
 
-        {/* Desktop Navigation Anchors */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-sm font-medium text-zinc-300 hover:text-violet-400 transition-colors duration-200"
-            >
-              {item.label}
-            </a>
-          ))}
+        {/* Center Text-Only Navigation (Desktop) */}
+        <nav aria-label="Primary" className="hidden md:flex items-center gap-8">
+          {navItems.map((item) => {
+            const active = item.match(pathname);
+            return (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`text-sm transition-colors ${
+                  active
+                    ? isDark
+                      ? 'font-extrabold text-[#facc15]'
+                      : 'font-extrabold text-[#9333ea]'
+                    : isDark
+                    ? 'font-semibold text-white/80 hover:text-white'
+                    : 'font-semibold text-[#473f56] hover:text-[#181024]'
+                }`}
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </nav>
 
-        {/* Actions (Socials + Email Clipboard Utility + Resume) */}
-        <div className="hidden md:flex items-center space-x-4">
-          <a
-            href={profileData.socials.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-400 hover:text-violet-400 transition-colors p-2 hover:bg-zinc-900 rounded-lg"
-            title="GitHub"
-          >
-            <Github className="w-4 h-4" />
-          </a>
-          <a
-            href={profileData.socials.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-400 hover:text-violet-400 transition-colors p-2 hover:bg-zinc-900 rounded-lg"
-            title="Instagram"
-          >
-            <Instagram className="w-4 h-4" />
-          </a>
-          <a
-            href={profileData.socials.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-zinc-400 hover:text-violet-400 transition-colors p-2 hover:bg-zinc-900 rounded-lg"
-            title="LinkedIn"
-          >
-            <Linkedin className="w-4 h-4" />
-          </a>
-
-          {/* Copy-to-Clipboard Email */}
+        {/* Right Controls */}
+        <div className="flex items-center gap-2 shrink-0">
           <button
-            onClick={copyEmail}
-            className="flex items-center space-x-2 text-xs font-medium text-zinc-300 bg-zinc-900 border border-zinc-800 hover:border-violet-500 hover:bg-zinc-800 px-3 py-1.5 rounded-lg transition-all duration-200"
-            title="Copy Email to Clipboard"
+            type="button"
+            onClick={toggleLang}
+            aria-label="Toggle Language"
+            className={`h-8 px-3 rounded-full text-[11px] font-bold border cursor-pointer transition-colors ${controlClass}`}
           >
-            <Mail className="w-3.5 h-3.5" />
-            <span className="max-w-[120px] truncate">
-              {profileData.socials.email}
-            </span>
-            {copied ? (
-              <Check className="w-3.5 h-3.5 text-violet-400" />
-            ) : (
-              <Copy className="w-3.5 h-3.5 opacity-60 hover:opacity-100" />
-            )}
+            <span className={lang === 'id' ? 'text-[#9333ea] font-extrabold' : 'opacity-60'}>ID</span>
+            <span className="mx-1 opacity-35">/</span>
+            <span className={lang === 'en' ? 'text-[#9333ea] font-extrabold' : 'opacity-60'}>EN</span>
           </button>
 
-          {/* Quick Resume Download */}
-          <a
-            href="https://drive.google.com/file/d/1kliVRxG9P86tZ19SGhcQ_yTxuGOJVpJD/view?usp=drive_link"
-            download
-            className="flex items-center space-x-2 text-xs font-medium text-white bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 px-3 py-1.5 rounded-lg shadow-lg shadow-violet-500/10 hover:shadow-violet-500/20 hover:-translate-y-0.5 transition-all duration-200"
-          >
-            <FileText className="w-3.5 h-3.5" />
-            <span>Resume</span>
-          </a>
-        </div>
-
-        {/* Mobile menu toggle button */}
-        <div className="md:hidden flex items-center space-x-3">
           <button
-            onClick={copyEmail}
-            className="p-2 text-zinc-400 hover:text-violet-400 hover:bg-zinc-900 rounded-lg"
-            title="Copy Email"
+            type="button"
+            onClick={toggleTheme}
+            aria-label="Toggle Dark Mode"
+            className={`w-8 h-8 rounded-full border grid place-items-center cursor-pointer transition-colors ${controlClass}`}
           >
-            {copied ? (
-              <Check className="w-5 h-5 text-violet-400" />
-            ) : (
-              <Mail className="w-5 h-5" />
-            )}
+            {theme === 'light' ? <Moon size={14} /> : <Sun size={14} />}
           </button>
+
+          <a
+            href="/#contact"
+            className={`hidden sm:inline-flex items-center px-4 py-2 rounded-full text-xs font-extrabold transition-all hover:-translate-y-0.5 shadow-md ${
+              isDark
+                ? 'bg-[#facc15] text-[#181024] hover:bg-[#fde047]'
+                : 'bg-[#181024] text-white hover:bg-[#2d1e46]'
+            }`}
+          >
+            {lang === 'id' ? 'Kontak' : 'Contact'}
+          </a>
+
           <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-zinc-400 hover:text-violet-400 hover:bg-zinc-900 rounded-lg focus:outline-none"
+            type="button"
+            onClick={() => setMobileOpen((prev) => !prev)}
             aria-label="Toggle Menu"
+            aria-expanded={mobileOpen}
+            className={`md:hidden w-8 h-8 rounded-full border grid place-items-center cursor-pointer transition-colors ${controlClass}`}
           >
-            {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
+            {mobileOpen ? <X size={15} /> : <Menu size={15} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Drawer menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden border-b border-zinc-800 bg-zinc-950 px-4 pt-2 pb-6 space-y-4">
-          <div className="flex flex-col space-y-3">
-            {navItems.map((item) => (
+      {/* Mobile Dropdown */}
+      {mobileOpen && (
+        <div
+          style={liquidGlassStyle}
+          className="pointer-events-auto md:hidden max-w-[1180px] mx-auto mt-2 p-3 rounded-3xl backdrop-blur-2xl backdrop-saturate-150 border flex flex-col gap-1"
+        >
+          {navItems.map((item) => {
+            const active = item.match(pathname);
+            return (
               <a
-                key={item.label}
+                key={item.href}
                 href={item.href}
-                className="text-base font-medium text-zinc-300 hover:text-violet-400 py-1 transition-colors duration-200"
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={() => setMobileOpen(false)}
+                className={`px-4 py-2.5 rounded-2xl text-sm font-bold transition-colors ${
+                  active
+                    ? isDark
+                      ? 'bg-white/15 text-white'
+                      : 'bg-[#f3e8ff] text-[#6b21a8]'
+                    : isDark
+                    ? 'text-white/80 hover:bg-white/10'
+                    : 'text-[#5b516a] hover:bg-[#faf5ff]'
+                }`}
               >
                 {item.label}
               </a>
-            ))}
-          </div>
-
-          <div className="border-t border-zinc-800 pt-4 flex flex-col sm:flex-row gap-3 items-stretch justify-between">
-            <div className="flex items-center space-x-4">
-              <a
-                href={profileData.socials.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-violet-400 p-2 hover:bg-zinc-900 rounded-lg"
-              >
-                <Github className="w-5 h-5" />
-              </a>
-              <a
-                href={profileData.socials.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-violet-400 p-2 hover:bg-zinc-900 rounded-lg"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href={profileData.socials.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-violet-400 p-2 hover:bg-zinc-900 rounded-lg"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
-
-            <a
-              href="/resume.pdf"
-              download
-              className="flex items-center justify-center space-x-2 text-sm font-medium text-white bg-gradient-to-r from-violet-600 to-blue-600 hover:from-violet-500 hover:to-blue-500 py-2.5 px-4 rounded-lg shadow-lg shadow-violet-500/10 transition-all duration-200"
-            >
-              <FileText className="w-4 h-4" />
-              <span>Download Resume</span>
-            </a>
-          </div>
+            );
+          })}
+          <a
+            href="/#contact"
+            onClick={() => setMobileOpen(false)}
+            className={`mt-1 px-4 py-2.5 rounded-full text-sm font-extrabold text-center ${
+              isDark ? 'bg-[#facc15] text-[#181024]' : 'bg-[#181024] text-white'
+            }`}
+          >
+            {lang === 'id' ? 'Kontak' : 'Contact'}
+          </a>
         </div>
       )}
     </header>

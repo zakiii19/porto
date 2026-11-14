@@ -18,6 +18,8 @@ figmaUrl: null
 liveUrl: "https://medium.com/@qolbulmuzaki/ui-ux-study-case-pijar-music-9b8632e3e935"
 ---
 
+<div data-lang="en">
+
 ## 1. Project Background & Challenge
 
 This project was conducted as part of an **internship selection test for a UI/UX Designer role**. 
@@ -81,3 +83,73 @@ To optimize resources, we categorized features using the **MoSCoW prioritization
 
 -   **Branding & Colors**: Vibrantly themed with warm magenta-pinks and clean whites to evoke passion, entertainment, and warmth.
 -   **High-Fidelity Interface**: Designed clean dashboard screens displaying upcoming charity concerts, interactive seat selection maps, quick payment screens, and a personal impact contribution dashboard.
+
+</div>
+
+<div data-lang="id">
+
+## 1. Latar Belakang & Tantangan Proyek
+
+Proyek ini dikerjakan sebagai bagian dari **tes seleksi magang untuk posisi UI/UX Designer**.
+
+Tujuan **Pijar Music** adalah membangun platform pemesanan tiket konser musik amal yang menghubungkan penikmat musik dengan acara live, sekaligus mengubah penjualan tiket menjadi kontribusi donasi dan bantuan bencana alam. Target audiens utamanya adalah generasi milenial yang antusias terhadap konser musik sekaligus kepedulian sosial.
+
+### Masalah yang Teridentifikasi
+1. **Keterlibatan Milenial**: Minat awal terhadap format donasi konvensional cenderung rendah, sehingga dibutuhkan pendekatan interaksi yang lebih kreatif.
+2. **Transparansi Donasi**: Pengguna sering ragu mengenai kejelasan penyaluran dan pemanfaatan dana donasi.
+3. **Pengalaman Pengguna Kurang Optimal**: Alur pembelian tiket yang berbelit dan tampilan yang tidak responsif membuat pengguna berhenti di tengah proses.
+4. **Retensi Komunitas**: Sulit menjaga interaksi komunitas tetap aktif setelah konser berakhir.
+
+---
+
+## 2. Riset & Validasi Masalah
+
+Untuk memvalidasi asumsi awal, dilakukan survei pengguna dan wawancara dengan penikmat musik yang aktif secara digital.
+
+### Pain Points Utama
+- **Ketidakpastian Dampak**: Pengguna menginginkan bukti nyata ke mana dana mereka disalurkan.
+- **Kerumitan Checkout**: Rasa frustrasi akibat formulir pembelian yang panjang dan kurang responsif.
+- **Minimnya Apresiasi**: Belum adanya fitur pengakuan atau lencana penghargaan bagi donatur aktif.
+
+Temuan tersebut dirangkum menggunakan **Affinity Diagram**, lalu diterjemahkan menjadi **User Persona** (Dinda, 28 tahun) dan **User Journey Map** untuk memetakan titik *drop-off* saat pembelian tiket.
+
+---
+
+## 3. Hook Model Canvas
+
+Untuk membangun platform yang mendorong partisipasi berulang, diterapkan kerangka **Hook Model** dari Nir Eyal:
+
+1. **Triggers (Pemicu)**:
+   * *Eksternal*: Undangan langsung dari teman, notifikasi konser artis favorit.
+   * *Internal*: Keinginan memberi dampak sosial dan rasa empati terhadap korban bencana.
+2. **Action (Aksi)**: Pembelian tiket cepat dalam satu ketukan dan pengaturan donasi mikro.
+3. **Variable Reward (Imbalan Bervariasi)**: Laporan transparansi dan bukti dampak nyata di lapangan (misalnya dokumentasi penyaluran bantuan pangan).
+4. **Investment (Investasi Pengguna)**: Mengoleksi lencana donasi dan membagikan riwayat kontribusi konser ke media sosial.
+
+---
+
+## 4. Prioritisasi Fitur (Metode MoSCoW)
+
+Untuk mengoptimalkan pengembangan, fitur dikelompokkan menggunakan **model prioritas MoSCoW**:
+
+- **Must Have**:
+  * Laporan terperinci penggunaan dana donasi.
+  * Pelacak dana terkumpul secara transparan dan *real-time*.
+- **Should Have**:
+  * Pengaturan notifikasi yang dipersonalisasi.
+  * Fitur polling/voting bagi pengguna untuk memilih penerima manfaat donasi berikutnya.
+- **Could Have**:
+  * Galeri visual pembaruan dampak bantuan.
+  * Lencana loyalitas (*reward badges*).
+- **Won't Have** (ditunda untuk tahap berikutnya):
+  * Webinar tanya-jawab langsung.
+  * Kontes *giveaway* berhadiah.
+
+---
+
+## 5. Desain Visual UI & Mockup Akhir
+
+- **Branding & Warna**: Mengusung palet magenta-pink hangat dipadukan dengan putih bersih untuk memancarkan semangat hiburan dan kepedulian.
+- **Antarmuka High-Fidelity**: Merancang layar beranda konser amal mendatang, peta pemilihan kursi interaktif, layar pembayaran ringkas, serta dashboard riwayat kontribusi pribadi.
+
+</div>

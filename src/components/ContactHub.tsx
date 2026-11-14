@@ -1,156 +1,120 @@
-import React, { useState } from "react";
-import {
-  Mail,
-  Copy,
-  Check,
-  Github,
-  Instagram,
-  Linkedin,
-  Compass,
-  BookOpen,
-} from "lucide-react";
-import profileData from "../data/profile.json";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
+import profile from '../data/profile.json';
+import { useLang, useTheme } from '../lib/prefs';
 
 export default function ContactHub() {
-  const [copied, setCopied] = useState(false);
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(profileData.socials.email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  const socials = [
-    {
-      name: "LinkedIn",
-      url: profileData.socials.linkedin,
-      icon: Linkedin,
-      color: "hover:text-blue-400 hover:border-blue-500/20 hover:bg-blue-500/5",
-      description: "Professional network",
-    },
-    {
-      name: "GitHub",
-      url: profileData.socials.github,
-      icon: Github,
-      color: "hover:text-zinc-100 hover:border-zinc-700 hover:bg-zinc-900/30",
-      description: "Code & repositories",
-    },
-    {
-      name: "Instagram",
-      url: profileData.socials.instagram,
-      icon: Instagram,
-      color: "hover:text-pink-400 hover:border-pink-500/20 hover:bg-pink-500/5",
-      description: "Design portfolios",
-    },
-    {
-      name: "Pinterest",
-      url: profileData.socials.pinterest,
-      icon: Compass,
-      color: "hover:text-red-400 hover:border-red-500/20 hover:bg-red-500/5",
-      description: "Visual moodboards",
-    },
-    {
-      name: "Medium",
-      url: profileData.socials.medium,
-      icon: BookOpen,
-      color:
-        "hover:text-violet-400 hover:border-violet-500/20 hover:bg-violet-500/5",
-      description: "Case study writeups",
-    },
-  ];
+  const lang = useLang();
+  const theme = useTheme();
+  const isDark = theme === 'dark';
 
   return (
-    <section className="py-20 bg-zinc-950 relative overflow-hidden border-t border-zinc-900">
-      {/* Decorative gradient blur */}
-      <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-violet-500/5 blur-[120px] pointer-events-none"></div>
+    <section id="contact" className="py-8 md:py-12">
+      <div className="max-w-[1180px] mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+          className={`relative overflow-hidden rounded-2xl border backdrop-blur-xl px-5 py-10 sm:px-12 sm:py-14 text-center transition-colors ${
+            isDark
+              ? 'bg-[#170f29]/80 border-white/12'
+              : 'bg-white/80 border-[#9333ea]/15'
+          }`}
+          style={{
+            boxShadow: isDark
+              ? '0 22px 48px rgba(0,0,0,0.45), inset 0 1px 0 rgba(255,255,255,0.08)'
+              : '0 18px 46px rgba(24,16,36,0.07), inset 0 1px 0 rgba(255,255,255,0.8)',
+          }}
+        >
+          {/* Ambient sunlit purple & gold glows matching site theme */}
+          <div
+            className="pointer-events-none absolute -top-20 -left-16 w-72 h-72 rounded-full blur-3xl"
+            style={{
+              background: isDark
+                ? 'radial-gradient(circle, rgba(147,51,234,0.32) 0%, transparent 70%)'
+                : 'radial-gradient(circle, rgba(147,51,234,0.14) 0%, transparent 70%)',
+            }}
+            aria-hidden="true"
+          />
+          <div
+            className="pointer-events-none absolute -bottom-24 -right-12 w-80 h-80 rounded-full blur-3xl"
+            style={{
+              background: isDark
+                ? 'radial-gradient(circle, rgba(250,204,21,0.14) 0%, transparent 70%)'
+                : 'radial-gradient(circle, rgba(250,204,21,0.18) 0%, rgba(192,132,252,0.10) 45%, transparent 70%)',
+            }}
+            aria-hidden="true"
+          />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
-          {/* Left Column: Headline and integrated Email widget */}
-          <div className="lg:col-span-5 space-y-6">
-            <div>
-              <span className="text-[10px] uppercase font-bold tracking-widest text-violet-400 block mb-2.5">
-                GET IN TOUCH
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white leading-tight">
-                Let's discuss your next project
-              </h2>
-              <p className="text-sm text-zinc-400 mt-3 leading-relaxed">
-                Open to design contracts, system architecture alignments, or
-                creative collaborations. Write to my direct mailbox or connect
-                via socials.
-              </p>
-            </div>
+          {/* Subtle theme-aware dot grid */}
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              backgroundImage: isDark
+                ? 'radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px)'
+                : 'radial-gradient(rgba(147,51,234,0.10) 1px, transparent 1px)',
+              backgroundSize: '24px 24px',
+              maskImage: 'radial-gradient(ellipse at center, black 35%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, black 35%, transparent 80%)',
+            }}
+            aria-hidden="true"
+          />
 
-            {/* Integrated Email/Copy Widget */}
-            <div className="space-y-2">
-              <span className="text-[10px] uppercase font-semibold text-zinc-500 tracking-wider">
-                Direct Email
-              </span>
-              <div className="flex items-center bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700/80 rounded-lg overflow-hidden transition-all group">
-                <div className="flex items-center gap-2.5 px-3.5 py-3 flex-grow min-w-0">
-                  <Mail className="w-4 h-4 text-violet-400 flex-shrink-0" />
-                  <span className="text-sm font-medium text-zinc-300 truncate">
-                    {profileData.socials.email}
-                  </span>
-                </div>
-                <button
-                  onClick={copyEmail}
-                  className="border-l border-zinc-800/80 px-4 py-3 bg-zinc-900 hover:bg-zinc-850 hover:text-violet-400 text-zinc-400 font-semibold text-xs transition-colors flex items-center gap-1.5 flex-shrink-0 cursor-pointer"
-                  title="Copy email to clipboard"
-                >
-                  {copied ? (
-                    <>
-                      <Check className="w-3.5 h-3.5 text-violet-400" />
-                      <span className="text-violet-400 font-bold">Copied</span>
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-3.5 h-3.5" />
-                      <span>Copy</span>
-                    </>
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column: Clean, Compact Social Rows */}
-          <div className="lg:col-span-7 space-y-3.5">
-            <span className="text-[10px] uppercase font-semibold text-zinc-500 tracking-wider block">
-              Connect Channels
+          <div className="relative z-10 max-w-2xl mx-auto">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-extrabold bg-[#facc15] text-[#181024] shadow-sm mb-4">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#181024]" />
+              {lang === 'id' ? 'Tersedia untuk Freelance & Full-time' : 'Available for Freelance & Full-time'}
             </span>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {socials.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center gap-3 bg-zinc-900/15 border border-zinc-850 hover:border-zinc-700 rounded-lg p-3 transition-all duration-200 group ${social.color}`}
-                  >
-                    {/* Compact Icon Box */}
-                    <div className="w-8.5 h-8.5 rounded bg-zinc-950 border border-zinc-850 flex items-center justify-center flex-shrink-0 text-zinc-400 group-hover:text-inherit transition-transform duration-200 group-hover:scale-105">
-                      <Icon className="w-4 h-4" />
-                    </div>
-                    {/* Typography */}
-                    <div className="flex flex-col min-w-0">
-                      <span className="text-xs sm:text-sm font-bold text-zinc-200 group-hover:text-inherit transition-colors truncate">
-                        {social.name}
-                      </span>
-                      <span className="text-[10px] text-zinc-500 truncate mt-0.5">
-                        {social.description}
-                      </span>
-                    </div>
-                  </a>
-                );
-              })}
+            <h2
+              className={`text-2xl sm:text-4xl font-extrabold leading-tight tracking-tight mb-3 ${
+                isDark ? 'text-white' : 'text-[#181024]'
+              }`}
+            >
+              {lang === 'id'
+                ? 'Punya ide produk atau campaign yang butuh visual & UX kuat?'
+                : 'Have a product or campaign that needs bold visuals & solid UX?'}
+            </h2>
+            <p className={`text-sm sm:text-base mb-7 ${isDark ? 'text-white/75' : 'text-[#5b516a]'}`}>
+              {lang === 'id'
+                ? 'Mari diskusi santai — kirim brief atau sapa langsung lewat Email atau LinkedIn'
+                : 'Let’s have a quick chat — send over a brief or say hello via Email or LinkedIn'}
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <motion.a
+                href={`mailto:${profile.email}`}
+                whileHover={{ y: -2, scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: 'spring', stiffness: 360, damping: 22 }}
+                className={`inline-flex items-center gap-1.5 px-6 py-3 rounded-full font-extrabold text-xs sm:text-sm shadow-sm transition-colors ${
+                  isDark
+                    ? 'bg-[#facc15] text-[#181024] hover:bg-[#fde047]'
+                    : 'bg-[#181024] text-white hover:bg-[#2a1d3d]'
+                }`}
+              >
+                <span>{lang === 'id' ? 'Kirim Email' : 'Send Email'}</span>
+                <ArrowUpRight size={14} strokeWidth={2.5} />
+              </motion.a>
+              <motion.a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -2, scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: 'spring', stiffness: 360, damping: 22 }}
+                className={`inline-flex items-center gap-1.5 px-6 py-3 rounded-full border backdrop-blur-md font-extrabold text-xs sm:text-sm transition-colors ${
+                  isDark
+                    ? 'bg-white/10 border-white/15 text-white hover:bg-white/15'
+                    : 'bg-white/85 border-[#9333ea]/20 text-[#181024] hover:border-[#9333ea]/50 hover:text-[#9333ea]'
+                }`}
+              >
+                <span>LinkedIn</span>
+                <ArrowUpRight size={14} strokeWidth={2.5} />
+              </motion.a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

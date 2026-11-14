@@ -17,6 +17,8 @@ figmaUrl: null
 liveUrl: "https://medium.com/@qolbulmuzaki/digital-banking-dashboard-6d0fd93b6ec5"
 ---
 
+<div data-lang="en">
+
 ## 1. Project Background & Challenge
 
 This project focused on the UI/UX design of a modern **Digital Banking Application**. The primary goal was to deliver a sleek, modern, and user-friendly interface without sacrificing the core sense of security and reliability (*trustworthiness*) essential to financial products.
@@ -58,3 +60,51 @@ Designing for responsiveness meant restructuring layouts fundamentally rather th
 ## 4. Conclusion & Reflection
 
 Designing UI for digital banking is a continuous act of balancing aesthetics and utility. Through this case study, I learned how strategic color application and breathing room (*negative space*) can translate highly complex numerical systems into clean, comfortable, and beautiful interactive products.
+
+</div>
+
+<div data-lang="id">
+
+## 1. Latar Belakang & Tantangan Proyek
+
+Proyek ini berfokus pada perancangan UI/UX **Aplikasi Perbankan Digital** modern. Tujuan utamanya adalah menghadirkan antarmuka yang ringkas, modern, dan mudah digunakan tanpa mengorbankan rasa aman serta kepercayaan (*trustworthiness*) yang krusial pada produk finansial.
+
+### Tantangan Utama
+- **Responsivitas Menyeluruh**: Menyajikan pengalaman yang konsisten di layar desktop beresolusi tinggi maupun layar ponsel berukuran ringkas.
+- **Tata Letak Padat Data**: Menyusun metrik keuangan yang padat (seperti saldo rekening, daftar transaksi, dan menu pembayaran tagihan) dalam format yang mudah dipindai agar tidak memicu beban kognitif berlebih.
+
+---
+
+## 2. Arah Visual & Panduan Gaya
+
+Sebelum menyusun struktur tata letak, tema visual dirumuskan terlebih dahulu untuk merepresentasikan stabilitas finansial:
+
+### Palet Warna & Ruang
+- **Dominasi Utama**: Nuansa biru dongker (*navy*) mendominasi latar belakang—secara psikologi warna melambangkan stabilitas, kepercayaan, dan keandalan profesional.
+- **Kontras & Kartu**: Untuk menyeimbangkan dominasi biru gelap, digunakan kartu putih bersudut membulat (*rounded corners*) agar tampilan terasa modern, bersih, dan ringan.
+
+### Ikonografi
+- Alih-alih memakai ikon datar standar, dipilih **ikon duotone** untuk memberi lapisan visual yang segar dan mencegah kejenuhan monokromatik.
+
+---
+
+## 3. Solusi Responsif: Desktop vs. Mobile
+
+Merancang responsivitas bukan sekadar mengecilkan komponen, melainkan menata ulang struktur tata letak:
+
+### Tata Letak Desktop
+- **Area Utama**: Memanfaatkan ruang horizontal yang luas dengan menempatkan saldo utama sebagai pusat perhatian dilengkapi kontrol privasi (*hide/show balance*).
+- **Grid Pembayaran & Riwayat**: Daftar utilitas pembayaran disusun dalam grid horizontal di sisi kiri, diseimbangkan dengan log transaksi terbaru di sisi kanan agar cepat dipindai.
+
+### Tata Letak Mobile
+- **Hierarki Vertikal Bertumpuk**: Grid horizontal diubah menjadi susunan **vertikal bertumpuk** agar informasi tidak terasa sesak.
+- **Bottom Sheet Ramah Jempol**: Kategori pembayaran yang panjang dirapikan ke dalam area gulir dan **bottom sheet** agar fungsi penting mudah dijangkau ibu jari (*thumb-friendly*).
+- **Menu Aksi Mengambang**: Aksi yang paling sering dipakai seperti *Transfer*, *Top Up*, *Tarik Tunai*, dan *Minta Dana* ditempatkan pada blok mengambang di bagian atas untuk akses cepat.
+
+---
+
+## 4. Kesimpulan & Refleksi
+
+Merancang UI perbankan digital adalah proses menyeimbangkan estetika dan utilitas secara berkelanjutan. Melalui studi kasus ini, terlihat bagaimana penerapan warna yang tepat dan ruang napas (*negative space*) mampu mengubah sistem angka yang kompleks menjadi produk interaktif yang nyaman digunakan.
+
+</div>

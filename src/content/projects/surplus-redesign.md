@@ -17,6 +17,8 @@ liveUrl: "https://www.figma.com/file/XiO4qTTvpGBhvlyn1kcdUG/Kelompok-8.1---Annar
 figmaUrl: "https://www.figma.com/file/XiO4qTTvpGBhvlyn1kcdUG/Kelompok-8.1---Annaraksana---Define?type=whiteboard&node-id=0-1&t=tHwuasTIwxedWtLn-0"
 ---
 
+<div data-lang="en">
+
 ## 1. Project Background & Overview
 
 This UI/UX project was executed during the **Kampus Merdeka Certified Independent Study (SIB) Cycle 5 program at GreatEdu**. Our creative team comprised **Jessica Anggraeni** (Team Leader & UX Researcher), **Qolbul Muzaki** (UI Designer), **Candra Purnama Aji** (UI Designer), and **A'laa Dzulqarnain** (UX Writer & UX Researcher).
@@ -88,3 +90,81 @@ We proposed **three core design solutions** integrated with a friendly, fresh, a
 
 ### Interactive Artifacts
 - **FigJam Board**: [Figma Whiteboard Link](https://www.figma.com/file/XiO4qTTvpGBhvlyn1kcdUG/Kelompok-8.1---Annaraksana---Define?type=whiteboard&node-id=0-1&t=tHwuasTIwxedWtLn-0)
+
+</div>
+
+<div data-lang="id">
+
+## 1. Latar Belakang & Gambaran Proyek
+
+Proyek UI/UX ini dikerjakan dalam program **Studi Independen Bersertifikat (SIB) Kampus Merdeka Batch 5 di GreatEdu**. Tim kreatif kami terdiri dari **Jessica Anggraeni** (Team Leader & UX Researcher), **Qolbul Muzaki** (UI Designer), **Candra Purnama Aji** (UI Designer), dan **A'laa Dzulqarnain** (UX Writer & UX Researcher).
+
+Tujuannya adalah mendesain ulang **Surplus**, salah satu platform penyelamatan pangan (*food rescue*) di Indonesia. Surplus membantu mengurangi limbah makanan dengan memungkinkan restoran menjual sisa makanan layak konsumsi dengan harga diskon sebelum jam tutup—sekaligus menekan emisi gas rumah kaca (metana) dari limbah makanan.
+
+---
+
+## 2. Riset & Identifikasi Masalah (Design Thinking)
+
+Kami menerapkan metodologi **Design Thinking** dari tahap **Empathize** hingga **Prototype**.
+
+### Hipotesis Usability
+
+Sebelum riset lapangan, dirumuskan lima hipotesis perilaku pengguna:
+1. Pengguna tidak tahu kapan menu yang habis akan tersedia kembali.
+2. Pengguna tidak menyadari pembaruan menu di restoran terdekat.
+3. Pengguna mengira hanya sedikit restoran aktif di sekitar lokasi mereka.
+4. Pengguna tidak dapat menyimpan menu tertentu untuk dilihat lagi nanti.
+5. Pengguna tidak mengetahui total penghematan uang saat membeli makanan surplus.
+
+### Usability Testing & Wawancara Pengguna
+
+Kami mewawancarai **5 partisipan** yang mewakili persona utama: *mahasiswa usia 19–25 tahun yang tinggal di kos*, sering memesan makanan online, dan aktif mencari promo diskon. Sesi pengujian dilakukan daring melalui Zoom dan Google Meet.
+
+### Temuan Tervalidasi
+
+Wawancara memvalidasi kelima hipotesis tersebut dengan beberapa *pain points* utama:
+- **Jadwal Restock Tidak Jelas**: Pengguna bingung karena tidak ada info kapan stok yang habis tersedia lagi.
+- **Tidak Ada Notifikasi**: Pengguna tidak bisa memantau pembaruan dari restoran favorit mereka.
+- **Belum Ada Fitur Simpan/Favorit**: Belum tersedia fungsi *wishlist* untuk menandai menu incaran.
+
+---
+
+## 3. Journey Mapping & Hook Canvas
+
+Untuk memahami siklus interaksi dan pemicu psikologis pengguna, kami menyusun **Hook Canvas** dan **User Journey Map**:
+
+- **Trigger (Internal)**: Kebutuhan makanan cepat dan terjangkau; kekhawatiran mengatur anggaran harian.
+- **Action**: Membuka aplikasi, mencari makanan, memfilter jarak terdekat, memakai voucher, dan menyelesaikan pembayaran.
+- **Variable Reward**: Mendapatkan makanan berkualitas dengan diskon hingga 50% sekaligus rasa puas telah berkontribusi menjaga lingkungan.
+- **Investment**: Menyimpan menu ke wishlist, mengatur notifikasi restoran favorit, dan menelusuri katalog.
+
+---
+
+## 4. Solusi UI/UX & Desain Ulang High-Fidelity
+
+Kami merancang **tiga solusi utama** yang dipadukan dengan gaya bahasa (*Tone of Voice*) yang ramah, segar, dan kasual:
+
+### Fitur 1: Ikuti Restoran & Notifikasi
+- **Masalah**: Pengguna sering ketinggalan info stok baru.
+- **Solusi**: Menambahkan tombol **Ikuti (Follow)** di header restoran sehingga pengguna mendapat notifikasi *real-time* saat merchant favorit merilis makanan surplus baru.
+
+### Fitur 2: Kejelasan Status Stok Habis
+- **Masalah**: Istilah "Tidak Tersedia" terasa membingungkan dan tanpa konteks waktu.
+- **Solusi**: Mengubah label menjadi **Stok Habis** disertai jadwal ketersediaan berikutnya (contoh: *"Tersedia besok pukul 19.00 – 21.00"*).
+
+### Fitur 3: Wishlist Menu Terintegrasi
+- **Masalah**: Pengguna kesulitan menyimpan menu untuk dibandingkan sebelum membeli.
+- **Solusi**: Menghadirkan fitur **Wishlist (Ikon Hati)** pada daftar menu agar makanan favorit terkumpul rapi untuk *checkout* cepat.
+
+---
+
+## 5. Aset Desain & Prototipe
+
+### Identitas Visual
+- **Warna Utama**: Hijau Hutan (*Forest Green*) yang melambangkan pelestarian lingkungan dan kesegaran kuliner.
+- **Tone of Voice**: Kasual, menenangkan, dan aktif.
+
+### Artefak Interaktif
+- **Papan FigJam**: [Tautan Whiteboard Figma](https://www.figma.com/file/XiO4qTTvpGBhvlyn1kcdUG/Kelompok-8.1---Annaraksana---Define?type=whiteboard&node-id=0-1&t=tHwuasTIwxedWtLn-0)
+
+</div>

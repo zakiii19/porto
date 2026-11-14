@@ -13,6 +13,8 @@ liveUrl: null
 figmaUrl: null
 ---
 
+<div data-lang="en">
+
 ![KolavitImage](/cover/kolavit.png)
 
 ## 1. Project Background & Challenge
@@ -46,3 +48,43 @@ The packaging layout was meticulously designed for clarity and aesthetic appeal:
    Incorporated soft organic background curves, subtle sunburst grid patterns, and realistic citrus fruit visuals to enhance appetizing appeal.
 4. **Structural Box Dieline**:
    Engineered print-ready mechanical dielines for a compact sachet display box, optimized for CMYK color precision and high-contrast shelf visibility.
+
+</div>
+
+<div data-lang="id">
+
+![KolavitImage](/cover/kolavit.png)
+
+## 1. Latar Belakang & Tantangan Proyek
+
+Kolavit adalah brand minuman kesehatan yang menghadirkan minuman serbuk kolagen rasa jeruk (*Minuman Serbuk Rasa Jeruk Dengan Kolagen*). Memadukan kolagen ikan dengan kesegaran jeruk kaya vitamin, produk ini menyasar konsumen yang peduli perawatan kulit dan kebugaran harian dalam sajian praktis.
+
+Tantangan desain utamanya adalah mengomunikasikan dua unsur inti—kolagen laut (ikan) dan rasa jeruk yang segar—secara jelas tanpa membuat kemasan terlihat penuh. Tujuannya adalah membangun sistem kemasan yang bersih, ramah, dan cerah sehingga terasa menyehatkan sekaligus menyegarkan.
+
+---
+
+## 2. Strategi Desain & Identitas Visual
+
+Kami mengembangkan estetika modern yang bersih dengan ilustrasi vektor ringan serta bentuk organik hangat agar kemasan tampil menonjol di rak ritel maupun etalase e-commerce.
+
+### Palet Warna
+
+- **Citrus Orange**: Oranye Cerah (`#E88229`) — merepresentasikan rasa jeruk yang segar dan vitalitas energi.
+- **Deep Marine**: Aksen Biru Dongker (`#1D3573`) — menonjolkan ikonografi kolagen ikan sekaligus memberi kesan tepercaya secara klinis.
+- **Pure Canvas**: Putih Lembut (`#FAF9F5`) — menjaga tampilan kotak tetap bersih, modern, dan mudah dibaca.
+- **Warm Sand**: Aksen Persik/Krem (`#F3BA82`) — memberi pemisah warna yang lembut serta aksen gelombang organik.
+
+### Elemen Kemasan & Visual
+
+Tata letak kemasan dirancang dengan cermat untuk kejelasan informasi dan daya tarik visual:
+
+1. **Ikonografi & Maskot Kustom**:
+   Menciptakan simbol grafis gelas dan ikan yang memadukan siluet gelas minuman, percikan tetesan jeruk, dan ikan laut agar langsung terbaca sebagai "minuman kolagen ikan".
+2. **Tipografi & Hierarki**:
+   Memilih tipografi serif yang elegan dan bersahabat untuk logotype **Kolavit**, dipadukan dengan sans-serif bersih untuk deskripsi produk (*Minuman Serbuk Rasa Jeruk Dengan Kolagen*).
+3. **Grafis Berlapis & Citra Produk**:
+   Menggabungkan lengkungan latar organik, pola *sunburst* halus, dan visual buah jeruk realistis untuk meningkatkan daya tarik rasa.
+4. **Dieline Struktur Kotak**:
+   Menyusun *mechanical dieline* siap cetak untuk kotak pajangan sachet yang ringkas, dioptimalkan untuk akurasi warna CMYK dan keterlihatan tinggi di rak.
+
+</div>

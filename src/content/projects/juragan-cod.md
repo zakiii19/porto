@@ -13,6 +13,8 @@ liveUrl: "https://juragancod.com/"
 figmaUrl: null
 ---
 
+<div data-lang="en">
+
 ## 1. Project Background & Challenge
 
 JuraganCOD is an e-commerce platform engineered to streamline cash-on-delivery (COD) order management, automated logistics tracking, and financial reconciliation for digital merchants. As part of an academic-industry collaboration at Universitas Negeri Semarang, our team was tasked with auditing, analyzing, and documenting the platform's core backend systems.
@@ -41,3 +43,38 @@ The technical documentation suite was structured into key operational pillars:
    Step-by-step mapping of the COD lifecycle—from order creation and shipping label generation to automated escrow clearing upon delivery.
 3. **Developer Onboarding Guide**:
    A streamlined setup guide covering GitHub repository workflows, local environment configuration, environment variables, and execution commands.
+
+</div>
+
+<div data-lang="id">
+
+## 1. Latar Belakang & Tantangan Proyek
+
+JuraganCOD adalah platform e-commerce yang dirancang untuk menyederhanakan manajemen pesanan *cash-on-delivery* (COD), pelacakan logistik otomatis, serta rekonsiliasi keuangan bagi merchant digital. Sebagai bagian dari kolaborasi akademik-industri di Universitas Negeri Semarang, tim kami bertugas mengaudit, menganalisis, dan mendokumentasikan sistem backend inti platform ini.
+
+Tantangan utamanya adalah memetakan ulang basis kode Go (Golang) dengan tingkat konkurensi tinggi, mengurai ketergantungan antar layanan, serta menerjemahkan operasi backend tingkat rendah menjadi dokumentasi teknis yang terstruktur dan mudah dipahami untuk proses *onboarding* developer berikutnya.
+
+---
+
+## 2. Eksekusi Teknis & Analisis Arsitektur
+
+Kami melakukan analisis kode secara mendalam untuk memetakan alur kerja sistem, transisi status pesanan, dan model persistensi data di ekosistem Go.
+
+### Pemetaan & Pemodelan Sistem
+
+- **Diagram Arsitektur UML**: Menyusun diagram *Class*, *Sequence*, dan *Component* secara menyeluruh untuk memvisualisasikan siklus hidup *request*, *routing middleware*, dan ketergantungan *service layer*.
+- **Aliran Data & Relasi Entitas**: Mendokumentasikan skema basis data, batasan transaksi, serta integrasi API eksternal untuk pembaruan status pengiriman multi-kurir.
+- **Audit Konkurensi & Logika**: Menganalisis *goroutine*, operasi *channel*, dan pola penanganan galat (*error handling*) guna memastikan alur eksekusi antar modul tetap transparan.
+
+### Modul Dokumentasi Inti
+
+Paket dokumentasi teknis disusun ke dalam beberapa pilar operasional utama:
+
+1. **Spesifikasi Endpoint API & Payload**:
+   Standarisasi format *request/response*, kode status HTTP, protokol autentikasi, serta skema payload untuk endpoint yang digunakan merchant.
+2. **Pipeline Pemrosesan Pesanan**:
+   Pemetaan langkah demi langkah siklus pesanan COD—mulai dari pembuatan pesanan, pembuatan resi pengiriman, hingga pencairan dana otomatis setelah barang diterima.
+3. **Panduan Onboarding Developer**:
+   Panduan instalasi ringkas yang mencakup alur kerja repositori GitHub, konfigurasi lingkungan lokal, variabel lingkungan (*env*), dan perintah eksekusi.
+
+</div>

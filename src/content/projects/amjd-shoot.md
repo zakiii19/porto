@@ -13,6 +13,8 @@ liveUrl: null
 figmaUrl: null
 ---
 
+<div data-lang="en">
+
 ![AmjdImage](/cover/amjd.png)
 
 ## 1. Project Background & Challenge
@@ -45,3 +47,42 @@ The branding package was structured for versatile cross-platform application:
    Monochrome white and inverted black variations crafted for unobtrusive overlay placement on photo corners and center-locks.
 4. **Social & Digital Assets**:
    Profile avatars, banner templates, and business card layouts designed to showcase a professional, clean photography brand identity.
+
+</div>
+
+<div data-lang="id">
+
+![AmjdImage](/cover/amjd.png)
+
+## 1. Latar Belakang & Tantangan Proyek
+
+AMJD.Shoot adalah personal brand fotografi profesional yang berfokus pada fotografi kreatif, acara, dan potret. Fotografer membutuhkan identitas visual yang mudah diingat dan fleksibel—mampu berfungsi sebagai logo utama yang tegas sekaligus *watermark* digital yang rapi pada foto beresolusi tinggi tanpa mengganggu subjek utama.
+
+Tantangan utamanya adalah merancang monogram geometris modern yang memadukan huruf **A, M, J, dan D** ke dalam struktur kubus berdimensi 3D, namun tetap memiliki kontras tinggi, keterbacaan tajam, dan mudah dikenali di latar gelap maupun terang.
+
+---
+
+## 2. Konsep Kreatif & Eksekusi Desain
+
+Kami merancang tanda monogram isometrik di mana garis-garis geometris yang saling bertemu membentuk inisial **AMJD**, menghasilkan siluet kubus terstruktur yang merepresentasikan perspektif, presisi, dan fokus—elemen inti dalam seni fotografi.
+
+### Palet Warna
+
+- **Matte Black**: Deep Charcoal (`#1A1A1A`) — menghadirkan latar kontras tinggi yang abadi dan cocok untuk portofolio fotografi.
+- **Pure White**: Off-White (`#FFFFFF`) — memberikan keterbacaan maksimal untuk simbol geometris maupun *watermark*.
+- **Monochrome Neutral**: Abu-abu Seimbang (`#808080`) — digunakan untuk garis bantu grid halus dan detail tipografi sekunder.
+
+### Sistem Logo & Identitas
+
+Paket branding disusun untuk kebutuhan aplikasi lintas platform yang serbaguna:
+
+1. **Simbol Monogram Geometris**:
+   Bentuk huruf isometrik yang saling mengunci, menyatukan huruf "A", "M", "J", dan "D" menjadi ikon heksagonal yang solid dan seimbang.
+2. **Tipografi & Wordmark**:
+   Tipografi sans-serif geometris tebal dan sedikit miring untuk **AMJD.Shoot**, memancarkan kesan cepat, teknik modern, dan energi dinamis.
+3. **Sistem Integrasi Watermark**:
+   Variasi monokrom putih dan hitam inversi yang dirancang agar tetap halus saat ditempatkan di sudut foto maupun bagian tengah.
+4. **Aset Sosial & Digital**:
+   Avatar profil, template banner, serta tata letak kartu nama yang menampilkan identitas brand fotografi secara profesional dan bersih.
+
+</div>

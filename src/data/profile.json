@@ -1,422 +1,424 @@
 {
-  "personal": {
-    "name": "Qolbul Muzaki",
-    "headline": "System Analyst & UI/UX / Graphic Designer",
-    "bio": "Transforming complex business logic into intuitive user experiences and striking visual brand assets. Bridging the gap between software architecture, user-centered interface design, and modern brand aesthetics."
+  "name": "Qolbul Muzaki",
+  "headline": "UI/UX Designer · Certified System Analyst (BNSP)",
+  "location": "Semarang, Indonesia",
+  "phone": "+62 888-0280-9711",
+  "email": "qolbulmuzaki@gmail.com",
+  "medium": "https://medium.com/@qolbulmuzaki",
+  "pinterest": "https://id.pinterest.com/qolbulmu_",
+  "linkedin": "https://www.linkedin.com/in/qolbulmuzaki",
+  "github": "https://github.com/zakiii19",
+  "instagram": "https://www.instagram.com/qgambar_",
+  "cvUrl": "/cv-qolbul-muzaki.pdf",
+  "socialStats": {
+    "pinterestMonthlyViews": "48K",
+    "linkedinFollowers": "2.4K",
+    "latestMediumTitleId": "UI/UX & Sistem Informasi",
+    "latestMediumTitleEn": "UI/UX & System Design"
   },
-  "socials": {
-    "email": "qolbulmuzaki@gmail.com",
-    "instagram": "https://instagram.com/qgambar_",
-    "pinterest": "https://pinterest.com/qolbulmu_",
-    "medium": "https://medium.com/@qolbulmuzaki",
-    "github": "https://github.com/zakiii19",
-    "linkedin": "https://linkedin.com/in/qolbulmuzaki"
+  "education": {
+    "degreeId": "S1 Pendidikan Teknik Informatika dan Komputer",
+    "degreeEn": "B.Ed. in Informatics & Computer Engineering",
+    "institution": "Universitas Negeri Semarang (UNNES)",
+    "period": "2021 – 2025",
+    "gpa": "3,85 / 4,00"
   },
-  "collaborations": [
+  "highlights": [
     {
-      "name": "LJH Realty Semarang Kota",
-      "logo": "/Logo LJH.png",
-      "role": "Business Support & Graphic Designer"
+      "num": "01",
+      "titleId": "UI/UX Designer",
+      "titleEn": "UI/UX Designer",
+      "subId": "Big Move Intelligent · Now",
+      "subEn": "Big Move Intelligent · Now"
     },
     {
-      "name": "Platinum Squad",
-      "logo": "/Logo Platinum.png",
-      "role": "Graphic Designer"
+      "num": "02",
+      "titleId": "Juara 1 Poster Nasional",
+      "titleEn": "1st Place National Poster",
+      "subId": "UNNES Digital Festival · 2023",
+      "subEn": "UNNES Digital Festival · 2023"
     },
     {
-      "name": "AMJD.Shoot",
-      "logo": "/Logo AMJD.png",
-      "role": "Logo Designer"
+      "num": "03",
+      "titleId": "Top 3 Final Project UI/UX",
+      "titleEn": "Top 3 UI/UX Final Project",
+      "subId": "GreatEdu Batch 5 · 2023",
+      "subEn": "GreatEdu Batch 5 · 2023"
     },
     {
-      "name": "Gangliofid",
-      "logo": "/Logo GANGLIOFID.png",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "CKJ Management",
-      "logo": "/Logo CKJ.png",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "Photo Instax Semarang",
-      "logo": "/Logo PHOTO INSTAX SEMARANG.png",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "Prasada Fushion",
-      "logo": "/Logo PRASADA FUSHION.png",
-      "role": "Intern Graphic Designer"
-    },
-    {
-      "name": "Megacodify",
-      "logo": "/Logo MEGACODIFY.png",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "SchoolTech Indonesia",
-      "logo": "/Logo SCHOOLTECHID.png",
-      "role": "Intern UI/UX Designer"
-    },
-    {
-      "name": "Viula Studio",
-      "logo": "/Logo VIULA STUDIO.png",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "Gudha Pranahara Indonesia",
-      "logo": "/Logo GUDHA PRANAHARA INDONESIA.png",
-      "role": "Intern Graphic Designer"
-    },
-    {
-      "name": "Inago Design",
-      "logo": "/Logo INAGO DESIGN.png",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "Kolavit",
-      "logo": "/Logo KOLAVIT.png",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "Custompedia Creative Group",
-      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "Bank Jateng",
-      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "Segel",
-      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
-      "role": "Freelance Graphic Designer"
-    },
-    {
-      "name": "SD Islam Al-Madinah Ungaran",
-      "logo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop&auto=format&q=80",
-      "role": "Freelance Graphic Designer"
+      "num": "04",
+      "titleId": "Analis Sistem (BNSP)",
+      "titleEn": "System Analyst (BNSP)",
+      "subId": "BNSP Indonesia · Feb 2024",
+      "subEn": "BNSP Indonesia · Feb 2024"
     }
   ],
   "experiences": [
     {
-      "role": "Business Support Officer - Graphic Designer",
+      "periodId": "Okt 2026 – Sekarang",
+      "periodEn": "Oct 2026 – Present",
+      "role": "UI/UX Designer",
+      "company": "Big Move Intelligent",
+      "location": "Depok, Indonesia",
+      "descId": "Berkolaborasi dalam analisis sistem, user flow, evaluasi UI aplikasi berjalan, serta menyiapkan aset Design System dan redesign aplikasi perusahaan",
+      "descEn": "Collaborating on system analysis, user flows, UI evaluation, company Design System assets, and end-to-end application redesign"
+    },
+    {
+      "periodId": "Jan 2025 – Sep 2026",
+      "periodEn": "Jan 2025 – Sep 2026",
+      "role": "Business Support Officer — Graphic Designer",
       "company": "LJH Realty Semarang Kota",
-      "period": "Jan 2025 - Present",
-      "highlights": [
-        "Manage the maintenance and smooth operation of office IT infrastructure (hardware, network, workstation) to support daily operations.",
-        "Design visual assets and digital marketing materials to support the promotion and branding of property units.",
-        "Prepare operational technical documentation and support the setup of business presentation infrastructure."
-      ]
+      "location": "Semarang, Indonesia",
+      "descId": "Merancang materi visual pemasaran dan branding properti, sekaligus memelihara infrastruktur IT kantor (hardware, network, workstation) dan dokumentasi teknis",
+      "descEn": "Designed property marketing and branding visuals while maintaining office IT infrastructure (hardware, network, workstation) and technical documentation"
     },
     {
-      "role": "Social Media Designer",
-      "company": "Cakra Kesatria Jawi Management",
-      "period": "Dec 2022 - Present",
-      "highlights": [
-        "Manage visual strategies and content design for multiple school social media accounts.",
-        "Periodically analyze content performance metrics to optimize audience engagement."
-      ]
-    },
-    {
-      "role": "Graphic Designer",
+      "periodId": "Jun – Jul 2026",
+      "periodEn": "Jun – Jul 2026",
+      "role": "Freelance Graphic Designer",
       "company": "PT. Custompedia Creative Group",
-      "period": "Jun 2026 - Jul 2026",
-      "highlights": [
-        "Produce creative graphic assets and digital promotional materials according to client needs.",
-        "Develop consistent visual design concepts to strengthen clients' brand identity.",
-        "Created a total of 50 designs throughout the project execution."
-      ]
+      "location": "Semarang, Indonesia",
+      "descId": "Memproduksi aset grafis kreatif dan materi promosi digital yang konsisten dengan identitas brand klien hingga menghasilkan 50 desain selama proyek",
+      "descEn": "Produced creative graphic assets and digital promotion materials aligned with client brand identity, delivering 50 designs across the project"
     },
     {
+      "periodId": "Des 2022 – Sekarang",
+      "periodEn": "Dec 2022 – Present",
+      "role": "Freelance Social Media Designer",
+      "company": "Cakra Kesatria Jawi (CKJ) Management",
+      "location": "Semarang, Indonesia",
+      "descId": "Mengelola strategi visual dan desain konten untuk beberapa akun media sosial sekolah serta menganalisis metrik performa untuk mengoptimalkan engagement",
+      "descEn": "Managed visual strategy and content design for multiple school social media accounts while analyzing performance metrics to optimize engagement"
+    },
+    {
+      "periodId": "Nov 2024 – Mar 2025",
+      "periodEn": "Nov 2024 – Mar 2025",
       "role": "Freelance Graphic Designer",
       "company": "Viula Studio",
-      "period": "Nov 2024 - Mar 2025",
-      "highlights": [
-        "Collaborate directly with clients to understand visual requirements and deliver precise design solutions.",
-        "Design brand identities, digital promotional media, and print materials for various client projects."
-      ]
+      "location": "Semarang, Indonesia",
+      "descId": "Bekerja sama langsung dengan klien untuk merancang identitas branding, media promosi digital, dan materi cetak yang presisi",
+      "descEn": "Collaborated directly with clients to craft brand identities, digital promotional media, and print deliverables"
     },
     {
+      "periodId": "Des 2024 – Jan 2025",
+      "periodEn": "Dec 2024 – Jan 2025",
       "role": "Graphic Designer",
       "company": "LJ Hooker Indonesia",
-      "period": "Dec 2024 - Jan 2025",
-      "highlights": [
-        "Assist the marketing team in expanding the reach of property promotions through digital media.",
-        "Design high-quality visual promotional materials conforming to the company's brand guidelines.",
-        "Optimize the visual presentation of property advertisements to capture the interest of prospective buyers on digital platforms."
-      ]
+      "location": "Semarang, Indonesia",
+      "descId": "Memperluas jangkauan promosi unit properti melalui media digital sesuai brand guidelines perusahaan dan mengoptimalkan visual iklan properti",
+      "descEn": "Expanded property promotion reach via digital media following company brand guidelines and optimizing property ad visuals"
     },
     {
-      "role": "Graphic Designer",
+      "periodId": "Agu – Nov 2024",
+      "periodEn": "Aug – Nov 2024",
+      "role": "Intern Graphic Designer",
       "company": "PT Gudha Pranahara Indonesia",
-      "period": "Aug 2024 - Nov 2024",
-      "highlights": [
-        "Contribute to the creative team in producing digital promotional campaign materials for several client accounts.",
-        "Collaboratively develop innovative design concepts, social media content assets, and print promotional materials.",
-        "Ensure visual consistency to support the successful launch of clients' digital campaigns."
-      ]
+      "location": "Bandung, Indonesia",
+      "descId": "Berkolaborasi dalam tim kreatif mengembangkan konsep desain inovatif, aset konten media sosial, dan materi promosi cetak untuk kampanye digital klien",
+      "descEn": "Collaborated in a creative team to develop innovative design concepts, social media assets, and print materials for client digital campaigns"
     },
     {
-      "role": "UI/UX Designer",
+      "periodId": "Mar – Jul 2024",
+      "periodEn": "Mar – Jul 2024",
+      "role": "Intern UI/UX Designer",
       "company": "SchoolTechId",
-      "period": "Apr 2024 - Jul 2024",
-      "highlights": [
-        "Collaborate with cross-functional teams to align design concepts with edtech product development requirements.",
-        "Design wireframes and user flows based on Product Requirements Documents (PRDs) to maintain interface consistency.",
-        "Translate wireframes into user-friendly, high-fidelity visual UI designs.",
-        "Create a consistent design system and enhance navigation usability across digital platforms."
-      ]
+      "location": "Malang, Indonesia",
+      "descId": "Berkolaborasi dengan developer dan PM merancang wireframe, user flow, high-fidelity UI, serta design system berbasis PRD untuk platform edtech",
+      "descEn": "Collaborated with developers and PMs to craft wireframes, user flows, high-fidelity UI, and design systems from PRDs for an edtech platform"
     },
     {
-      "role": "Creative Media",
-      "company": "Google Developer Students Club UNNES",
-      "period": "Aug 2023 - Jul 2024",
-      "highlights": [
-        "Produce creative visuals and media to support the organization's communication targets.",
-        "Collaboratively design graphics, promotional videos, and animations, while supervising content distribution across multiple channels.",
-        "Maintain visual identity consistency and elevate the online presence of GDSC UNNES."
-      ]
-    },
-    {
-      "role": "Laboratory Teaching Assistant",
-      "company": "Universitas Negeri Semarang",
-      "period": "Feb 2024 - Jun 2024",
-      "highlights": [
-        "Guide students in laboratory practicum sessions, prepare equipment, and explain experimental procedures.",
-        "Ensure safety protocols are strictly followed and evaluate student lab reports/results.",
-        "Contribute to compiling new practicum modules within the laboratory environment."
-      ]
-    },
-    {
-      "role": "Mentor UI/UX",
-      "company": "Training Tech Electrical Science Club",
-      "period": "Nov 2023 - Dec 2023",
-      "highlights": [
-        "Serve as a mentor to share practical insights into user interface and user experience (UI/UX) design.",
-        "Develop training materials, provide hands-on guidance for wireframe creation, and guide participants in user-centered product design.",
-        "Help participants master UI/UX design fundamentals and independently create application prototypes."
-      ]
-    },
-    {
+      "periodId": "Nov – Des 2023",
+      "periodEn": "Nov – Dec 2023",
       "role": "Documentation Specialist",
       "company": "Surya Sasmitha Tech",
-      "period": "Nov 2023 - Dec 2023",
-      "highlights": [
-        "Designed UML diagrams to represent backend structure and workflows on the JuraganCOD platform.",
-        "Compiled comprehensive technical documentation including system architecture, API schemas, and application workflows."
-      ]
+      "location": "Remote",
+      "descId": "Merancang diagram UML untuk struktur backend dan alur proses platform JuraganCOD serta menyusun dokumentasi teknis arsitektur sistem dan skema API",
+      "descEn": "Designed UML diagrams for backend structure and process flows on JuraganCOD and authored technical documentation for system architecture and API schemas"
     },
     {
+      "periodId": "Jan – Jun 2023",
+      "periodEn": "Jan – Jun 2023",
       "role": "Partner Designer",
       "company": "Inago Design",
-      "period": "Jan 2023 - Jun 2023",
-      "highlights": [
-        "Designed retail graphics and typography based on the Print on Demand (PoD) concept for apparel and accessories.",
-        "Followed youth visual trends to produce high commercial value designs for e-commerce platforms."
-      ]
+      "location": "Jakarta Barat, Indonesia",
+      "descId": "Merancang desain grafis dan tipografi ritel berbasis Print on Demand (PoD) untuk produk pakaian dan aksesoris siap produksi di platform e-commerce",
+      "descEn": "Created retail graphic designs and typography for Print on Demand (PoD) apparel and accessories ready for e-commerce production"
+    }
+  ],
+  "organizationalExperiences": [
+    {
+      "periodId": "Agu 2023 – Jul 2024",
+      "periodEn": "Aug 2023 – Jul 2024",
+      "role": "Creative Media",
+      "company": "Google Developer Students Club (GDSC) UNNES",
+      "location": "Semarang, Indonesia",
+      "descId": "Memproduksi desain grafis, video promosi, dan animasi secara kolaboratif serta menjaga konsistensi identitas visual GDSC UNNES",
+      "descEn": "Produced collaborative graphic designs, promotional videos, and animations while maintaining GDSC UNNES visual identity consistency"
+    },
+    {
+      "periodId": "Mei – Jun 2024",
+      "periodEn": "May – Jun 2024",
+      "role": "Student Mobile App Dev with React Native",
+      "company": "Progate · Digital Talent Scholarship",
+      "location": "Remote",
+      "descId": "Mengikuti pelatihan intensif pengembangan aplikasi mobile berbasis React Native, arsitektur komponen, pengelolaan state, dan UI seluler",
+      "descEn": "Completed intensive mobile app development training with React Native covering component architecture, state management, and mobile UI"
+    },
+    {
+      "periodId": "Feb – Jun 2024",
+      "periodEn": "Feb – Jun 2024",
+      "role": "Laboratory Teaching Assistant",
+      "company": "Universitas Negeri Semarang",
+      "location": "Semarang, Indonesia",
+      "descId": "Membimbing mahasiswa dalam sesi praktikum laboratorium, memastikan keselamatan kerja, mengevaluasi hasil praktikum, dan menyusun modul baru",
+      "descEn": "Guided students in laboratory practicum sessions, ensured safety protocols, evaluated lab results, and contributed to new practicum modules"
+    },
+    {
+      "periodId": "Feb – Jun 2024",
+      "periodEn": "Feb – Jun 2024",
+      "role": "Student Microsoft Web & Mobile Developer",
+      "company": "MariBelajar · Studi Independen Bersertifikat",
+      "location": "Remote",
+      "descId": "Mendalami pengembangan aplikasi berbasis teknologi Microsoft (ASP.NET, Azure Cloud) dan membangun aplikasi sentiment analysis sebagai proyek akhir",
+      "descEn": "Studied Microsoft ecosystem development (ASP.NET, Azure Cloud) and built a comprehensive sentiment analysis application as the final project"
+    },
+    {
+      "periodId": "Nov – Des 2023",
+      "periodEn": "Nov – Dec 2023",
+      "role": "UI/UX Mentor",
+      "company": "Training Tech Electrical Science Club UNNES",
+      "location": "Semarang, Indonesia",
+      "descId": "Membimbing lebih dari 20 peserta dalam materi fondasi UI/UX design, pembuatan wireframe, hingga menghasilkan prototipe aplikasi secara mandiri",
+      "descEn": "Mentored 20+ participants on UI/UX design foundations, wireframing, and building independent interactive app prototypes"
+    },
+    {
+      "periodId": "Agu – Des 2023",
+      "periodEn": "Aug – Dec 2023",
+      "role": "Student UI/UX",
+      "company": "GreatEdu · Studi Independen Batch 5",
+      "location": "Remote",
+      "descId": "Melakukan user research, usability testing, dan wireframing hingga meraih Peringkat ke-3 Proyek Akhir berbasis UI/UX & Design Thinking",
+      "descEn": "Conducted user research, usability testing, and wireframing, earning Top 3 Best Final Project using UI/UX & Design Thinking"
+    },
+    {
+      "periodId": "Jul – Des 2023",
+      "periodEn": "Jul – Dec 2023",
+      "role": "Volunteer for Information Communication Media",
+      "company": "PPK Ormawa UKM Riptek UNNES",
+      "location": "Semarang, Indonesia",
+      "descId": "Merancang komunikasi visual kampanye organisasi, menentukan skema warna dan tipografi, serta memproduksi infografis kegiatan masyarakat",
+      "descEn": "Designed visual campaign communications, color and typography systems, and community activity infographics"
+    },
+    {
+      "periodId": "Feb – Des 2023",
+      "periodEn": "Feb – Dec 2023",
+      "role": "Scout Coordinator at the Faculty of Engineering",
+      "company": "Universitas Negeri Semarang",
+      "location": "Semarang, Indonesia",
+      "descId": "Memimpin organisasi kepramukaan tingkat Fakultas Teknik, mengoordinasikan kepala divisi, dan meningkatkan partisipasi mahasiswa sebesar 40%",
+      "descEn": "Led the Faculty of Engineering scouting organization, coordinated division heads, and increased student participation by 40%"
+    },
+    {
+      "periodId": "Agu 2023",
+      "periodEn": "Aug 2023",
+      "role": "Publication, Decoration & Documentation Division",
+      "company": "Orientasi Kepramukaan Perguruan Tinggi (OKPT) UNNES",
+      "location": "Semarang, Indonesia",
+      "descId": "Merancang logo, maskot kegiatan, elemen dekorasi, tata letak buku panduan acara, dan dokumentasi visual kegiatan OKPT",
+      "descEn": "Designed event logo, mascot, decoration elements, guidebook layout, and visual documentation for OKPT"
+    },
+    {
+      "periodId": "Feb 2022 – Jan 2023",
+      "periodEn": "Feb 2022 – Jan 2023",
+      "role": "Member of Scouting Activities Section",
+      "company": "Universitas Negeri Semarang",
+      "location": "Semarang, Indonesia",
+      "descId": "Merencanakan dan melaksanakan agenda kemahasiswaan dan kepramukaan serta mengoordinasikan logistik lapangan secara terstruktur",
+      "descEn": "Planned and executed student scouting programs and coordinated field logistics in a structured manner"
+    },
+    {
+      "periodId": "Sep – Nov 2022",
+      "periodEn": "Sep – Nov 2022",
+      "role": "Member of the Public Relations",
+      "company": "Technoday 2022 UNNES",
+      "location": "Semarang, Indonesia",
+      "descId": "Membangun komunikasi publik, menjalin kemitraan media dan sponsor, serta mengelola alur informasi peserta kompetisi Technoday 2022",
+      "descEn": "Managed public communications, media and sponsor partnerships, and participant information flows for Technoday 2022"
+    },
+    {
+      "periodId": "Jul – Agu 2022",
+      "periodEn": "Jul – Aug 2022",
+      "role": "Chairman (Ketua Pelaksana)",
+      "company": "Orientasi Kepramukaan Perguruan Tinggi (OKPT) FT UNNES",
+      "location": "Semarang, Indonesia",
+      "descId": "Memimpin tim inti 20+ anggota dan seluruh siklus acara OKPT secara luring & daring untuk lebih dari 1.000 mahasiswa baru Fakultas Teknik",
+      "descEn": "Led a core committee of 20+ members and full event operations offline & online for 1,000+ incoming Engineering freshmen"
     }
   ],
   "certifications": [
     {
-      "title": "System Analyst",
+      "title": "Sertifikasi Profesi Informatika: System Analyst",
       "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
-      "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/774382730/skill-associations-details/"
+      "year": "Feb 2024",
+      "badge": "BNSP",
+      "category": "tech"
     },
     {
-      "title": "UI/UX - SIB Cycle 5",
-      "issuer": "GreatEdu",
+      "title": "Juara 1 National Digital Poster Competition",
+      "issuer": "UNNES Digital Festival",
       "year": "2023",
-      "credentialUrl": "https://drive.google.com/file/d/1ef7oi0IvSAZ92QP_7yHNwhT3ZbXriaC-/view?usp=drive_link&usp=embed_facebook"
-    },
-    
-    {
-      "title": "Intermediate Junior Web Developer (Vocational School Graduate Academy)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
+      "badge": "1ST PLACE",
+      "category": "achievement"
     },
     {
-      "title": "Junior Web Developer (Vocational School Graduate Academy)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
+      "title": "Top 3 Best Final Project — UI/UX Design",
+      "issuer": "Studi Independen Batch 5 GreatEdu",
+      "year": "2023",
+      "badge": "TOP 3",
+      "category": "achievement"
     },
     {
-      "title": "Introduction to Financial Literacy",
+      "title": "Microsoft Office Specialist: Excel Associate",
+      "issuer": "Microsoft",
+      "year": "Sep 2024",
+      "badge": "MICROSOFT",
+      "category": "tech"
+    },
+    {
+      "title": "Azure Fundamental",
+      "issuer": "Microsoft",
+      "year": "2024",
+      "badge": "CLOUD",
+      "category": "tech"
+    },
+    {
+      "title": "Microsoft Web & Mobile Developer",
+      "issuer": "MariBelajar (MSIB)",
+      "year": "Feb – Jun 2024",
+      "badge": "MSIB",
+      "category": "tech"
+    },
+    {
+      "title": "Junior Web Developer",
+      "issuer": "Digitalent Scholarship (Komdigi)",
+      "year": "Agu – Sep 2025",
+      "badge": "DTS",
+      "category": "tech"
+    },
+    {
+      "title": "Data Analisis",
+      "issuer": "Digitalent Scholarship (Komdigi)",
+      "year": "Jun 2025",
+      "badge": "DTS",
+      "category": "tech"
+    },
+    {
+      "title": "Artificial Intelligence",
+      "issuer": "Digitalent Scholarship (Komdigi)",
+      "year": "Mei 2025",
+      "badge": "DTS",
+      "category": "tech"
+    },
+    {
+      "title": "Mobile App Dev with React Native",
+      "issuer": "Progate · Digital Talent Scholarship",
+      "year": "Mei – Jun 2024",
+      "badge": "DTS",
+      "category": "tech"
+    },
+    {
+      "title": "Pemrograman (Micro Skill)",
+      "issuer": "Digitalent Scholarship (Komdigi)",
+      "year": "2024",
+      "badge": "MICRO SKILL",
+      "category": "tech"
+    },
+    {
+      "title": "Belajar Dasar Data Science",
       "issuer": "Dicoding Indonesia",
-      "year": "2025",
-      "credentialUrl": "https://www.dicoding.com/certificates/53XEKK450XRN"
+      "year": "Nov 2023",
+      "badge": "DICODING",
+      "category": "tech"
     },
     {
       "title": "Quality Assurance Introduction",
       "issuer": "MySkill",
-      "year": "2025",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-mGdWfE7lCl73hEKbKvf5/wBnjuX8lSLOYl0bhI6jvwhZAibH3-xzKweyMBYfdpEzeH0zlP.pdf"
-    },
-    {
-      "title": "AI Productivity and AI API Integration for Developers",
-      "issuer": "Hacktiv8 Indonesia",
-      "year": "2025",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/75556890/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
-    },
-    {
-      "title": "Business Development",
-      "issuer": "MySkill",
-      "year": "2025",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-siyU7pYoSdWL9UfIhCmD/wBnjuX8lSLOYl0bhI6jvwhZAibH3-bOzuAWFBcNPIolm84Jcq.pdf"
-    },
-    {
-      "title": "Frontend - HTML",
-      "issuer": "MySkill",
-      "year": "2025",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-DQ4WDIr2jXa70FUI477S/wBnjuX8lSLOYl0bhI6jvwhZAibH3-hQSCoaWe5hYg9ITmI7IA.pdf"
-    },
-    {
-      "title": "Programming (Micro Skill)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
-    },
-    {
-      "title": "Data Analysis (Micro Skill)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
-    },
-    {
-      "title": "Artificial Intelligence (Talent Scouting Academy)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
-    },
-    {
-      "title": "Artificial Intelligence (Micro Skill)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
-    },
-    {
-      "title": "Digital Literacy (Micro Skill)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
-    },
-    {
-      "title": "WordPress Development",
-      "issuer": "MySkill",
-      "year": "2025",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-EzpMYkTamzIlqazTx9Z6/wBnjuX8lSLOYl0bhI6jvwhZAibH3-AiiIuapX39u1NjYGJZgo.pdf"
-    },
-    {
-      "title": "Information Technology (Micro Skill)",
-      "issuer": "Digital Talent Scholarship",
-      "year": "2025",
-      "credentialUrl": "https://digitalent.kominfo.go.id/cek-sertifikat"
-    },
-    {
-      "title": "User Experience Research",
-      "issuer": "MySkill",
       "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/713537076/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
+      "badge": "QA",
+      "category": "tech"
     },
     {
-      "title": "Figma For UI/UX Design",
-      "issuer": "MySkill",
-      "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/712532494/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
-    },
-    {
-      "title": "Microsoft Office Specialist: Excel Associate (Microsoft 365 Apps)",
-      "issuer": "Microsoft",
-      "year": "2024",
-      "credentialUrl": "https://www.credly.com/badges/bdcf4776-d6ca-4bc2-8c36-d24834db2446/linked_in_profile"
-    },
-    {
-      "title": "Basic Programming",
-      "issuer": "MariBelajar",
-      "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/454495398/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
-    },
-    {
-      "title": "Creativity and Critical Thinking",
-      "issuer": "MariBelajar",
-      "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/453704123/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
-    },
-    {
-      "title": "Azure Fundamentals",
-      "issuer": "MariBelajar",
-      "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/452276291/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
-    },
-    {
-      "title": "Application Development with Power Platform",
-      "issuer": "MariBelajar",
-      "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/451814697/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
-    },
-    {
-      "title": "Web Application Development",
-      "issuer": "MariBelajar",
-      "year": "2024",
-      "credentialUrl": "https://www.linkedin.com/in/qolbulmuzaki/overlay/Certifications/451594095/treasury/?profileId=ACoAACxHkIUBBnmB_sLyZWU9ZzqIytZ6cfQu7dg"
-    },
-    {
-      "title": "JavaScript Course",
+      "title": "Kursus Git",
       "issuer": "Progate",
       "year": "2024",
-      "credentialUrl": "https://progate.com/course_certificate/d0fa5ad3seng9b"
+      "badge": "GIT",
+      "category": "tech"
     },
     {
-      "title": "Git Course",
-      "issuer": "Progate",
-      "year": "2024",
-      "credentialUrl": "https://progate.com/course_certificate/e73abc11sejznd"
-    },
-    {
-      "title": "Command Line Course",
-      "issuer": "Progate",
-      "year": "2024",
-      "credentialUrl": "https://progate.com/course_certificate/65793767sejxg4"
-    },
-    {
-      "title": "Green Digital Skills Certificate",
-      "issuer": "INCO Academy",
-      "year": "2024",
-      "credentialUrl": "https://learning.inco-group.co/admin/tool/certificate/index.php?code=0149813365QM"
-    },
-    {
-      "title": "UX Writing",
+      "title": "E-Learning: Frontend HTML",
       "issuer": "MySkill",
-      "year": "2024",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-0hP9ij6zJq9sMsdL4jXP/wBnjuX8lSLOYl0bhI6jvwhZAibH3-DZLf6kkLNqTrSmSjc1tB.pdf"
+      "year": "Sep – Okt 2025",
+      "badge": "MYSKILL",
+      "category": "tech"
     },
     {
-      "title": "Git and GitHub",
+      "title": "E-Learning: WordPress Development",
       "issuer": "MySkill",
-      "year": "2024",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-JakGfrpOr4X1VIIcFXUo/wBnjuX8lSLOYl0bhI6jvwhZAibH3-g2UOxmatCfoFOCKmjkS6.pdf"
+      "year": "Mar – Apr 2025",
+      "badge": "MYSKILL",
+      "category": "tech"
     },
     {
-      "title": "User Experience Design",
+      "title": "E-Learning: Business Development",
       "issuer": "MySkill",
-      "year": "2024",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-IPmF2VBDDWbE5S0LtYlt/wBnjuX8lSLOYl0bhI6jvwhZAibH3-c0Cd4lYxs1gf95OMeFLW.pdf"
+      "year": "Sep – Okt 2025",
+      "badge": "MYSKILL",
+      "category": "tech"
     },
     {
-      "title": "User Interface Design",
+      "title": "UI/UX Bootcamp",
+      "issuer": "GreatEdu (MSIB Batch 5)",
+      "year": "Agu – Des 2023",
+      "badge": "BOOTCAMP",
+      "category": "design"
+    },
+    {
+      "title": "E-Learning: UI – UX Research Design",
       "issuer": "MySkill",
-      "year": "2024",
-      "credentialUrl": "https://storage.googleapis.com/myskill-v2-certificates/topic-VFU4WBESOYbs2nHTCKE0/wBnjuX8lSLOYl0bhI6jvwhZAibH3-qMPAYc8HZe65m24JV19I.pdf"
+      "year": "Mei – Nov 2023",
+      "badge": "MYSKILL",
+      "category": "design"
     },
     {
-      "title": "Basics of Data Science",
-      "issuer": "Dicoding Indonesia",
-      "year": "2023",
-      "credentialUrl": "https://www.dicoding.com/certificates/1OP8NY1NLXQK"
+      "title": "E-Learning: Graphic Design",
+      "issuer": "MySkill",
+      "year": "Mei – Nov 2023",
+      "badge": "MYSKILL",
+      "category": "design"
+    },
+    {
+      "title": "Test of Proficiency in English Language (Skor 447)",
+      "issuer": "LPPP UNNES",
+      "year": "Mar 2025",
+      "badge": "LANGUAGE",
+      "category": "language"
     }
+  ],
+  "clients": [
+    { "name": "LJH Realty Semarang Kota", "logo": "/Logo LJH.png" },
+    { "name": "SchoolTechId", "logo": "/Logo SCHOOLTECHID.png" },
+    { "name": "Custompedia", "logo": "/Logo Custompedia.png" },
+    { "name": "CKJ Management", "logo": "/Logo CKJ.png" },
+    { "name": "Viula Studio", "logo": "/Logo VIULA STUDIO.png" },
+    { "name": "Gudha Pranahara Indonesia", "logo": "/Logo GUDHA PRANAHARA INDONESIA.png" },
+    { "name": "Inago Design", "logo": "/Logo INAGO DESIGN.png" },
+    { "name": "Bank Jateng", "logo": "/Logo bank jateng.png" },
+    { "name": "Prasada Fusion", "logo": "/Logo PRASADA FUSHION.png" },
+    { "name": "Kolavit", "logo": "/Logo KOLAVIT.png" },
+    { "name": "AMJD.Shoot", "logo": "/Logo AMJD.png" },
+    { "name": "Gangliofid", "logo": "/Logo GANGLIOFID.png" },
+    { "name": "Megacodify", "logo": "/Logo MEGACODIFY.png" },
+    { "name": "Photo Instax Semarang", "logo": "/Logo PHOTO INSTAX SEMARANG.png" },
+    { "name": "Platinum", "logo": "/Logo Platinum.png" }
   ]
 }

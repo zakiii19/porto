@@ -13,6 +13,8 @@ liveUrl: "https://id.pinterest.com/qolbulmu_/ckj-management/"
 figmaUrl: null
 ---
 
+<div data-lang="en">
+
 ## 1. Project Background & Challenge
 
 CKJ Management is a professional training organization dedicated to mentoring school-based Paskibra (Honor Guard) and Scout (Pramuka) extracurricular programs. Their core mission is to cultivate discipline, leadership skills, and championship mindsets, guiding youth teams toward top achievements in regional and national competitions.
@@ -44,3 +46,41 @@ The social media design framework was structured into distinct categories tailor
    Clean, infographic-style carousel templates delivering practical drill guides, scout knots, and leadership takeaways in digestible formats.
 4. **Recruitment & Event Collateral**:
    High-impact promotional posters and banners designed for physical prints and digital campaigns to drive enrollment for training camps and seminars.
+
+</div>
+
+<div data-lang="id">
+
+## 1. Latar Belakang & Tantangan Proyek
+
+CKJ Management adalah organisasi pelatihan profesional yang berfokus mendampingi ekstrakurikuler Paskibra dan Pramuka di sekolah. Misi utamanya adalah menumbuhkan kedisiplinan, jiwa kepemimpinan, dan mental juara guna membimbing tim pelajar meraih prestasi terbaik di kompetisi tingkat regional maupun nasional.
+
+Tantangan utamanya adalah membangun identitas brand yang mampu menyeimbangkan **kedisiplinan, wibawa, dan prestasi** dengan **estetika modern penuh energi** yang dekat dengan siswa SMP dan SMA. Strategi visual media sosial juga harus membangun kebanggaan institusi, menampilkan kemenangan lomba sebagai *social proof*, dan menarik kerja sama sekolah baru.
+
+---
+
+## 2. Konsep Kreatif & Arah Visual
+
+Arah visual terinspirasi dari presisi latihan baris-berbaris dan semangat kebersamaan kepramukaan. Kami memadukan sudut geometris tajam dengan tata letak dinamis—layaknya media olahraga profesional—untuk menghadirkan aura kelas juara.
+
+### Palet Warna
+
+- **Victory Gold**: Emas Prestasi (`#FFC72C`) — melambangkan keunggulan, trofi, dan pencapaian tertinggi.
+- **Valor Navy**: Biru Dongker (`#0A192F`) — merepresentasikan kedisiplinan, profesionalisme, dan struktur organisasi.
+- **Energetic Crimson**: Merah Berani (`#E63946`) — menggambarkan keberanian, energi muda, dan tekad kuat.
+- **Base Neutrals**: Putih Bersih (`#F8F9FA`) dan Hitam Karbon (`#121212`) untuk kontras tipografi dan keterbacaan maksimal.
+
+### Sistem Desain Media Sosial & Branding
+
+Kerangka desain media sosial dibagi ke dalam beberapa kategori konten strategis:
+
+1. **Sorotan Prestasi & Kejuaraan**:
+   Tata letak kontras tinggi dengan tipografi tebal, pencahayaan foto dramatis, serta aksen vektor medali/trofi untuk merayakan kemenangan lomba.
+2. **Dokumentasi Latihan & Kedisiplinan**:
+   Fotografi monokrom atau desaturasi yang dipadukan dengan aksen emas/merah untuk menekankan fokus, ketangguhan fisik, dan kekompakan tim saat latihan.
+3. **Tips Kepemimpinan & Baris-Berbaris (Edukasi)**:
+   Template carousel infografis yang bersih untuk menyajikan panduan PBB, tali-temali, dan materi kepemimpinan secara ringkas.
+4. **Materi Rekrutmen & Acara**:
+   Poster dan spanduk promosi berdaya tarik tinggi untuk kebutuhan cetak maupun kampanye digital guna mendorong pendaftaran pelatihan dan seminar.
+
+</div>

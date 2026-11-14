@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar';
+import NotFoundView from '../components/NotFoundView';
+import Footer from '../components/Footer';
+---
+
+<Layout title="404 — Halaman Tidak Ditemukan | Qolbul Muzaki">
+  <Navbar client:load />
+  <main class="flex-1 flex flex-col">
+    <NotFoundView client:load />
+  </main>
+  <Footer />
+</Layout>
